@@ -1,0 +1,56 @@
+/* ================ GLOBAL STYLES ================ */
+
+html {
+  height: 100%;
+  // overflow-y: scroll;
+  font-size: 10px;
+}
+
+body {
+  color: $darkColor ;
+  @include clearfix;
+  height: 100%;
+  font-family: $enFont;
+  font-size: 1.6rem;
+  line-height: 1.5 !important;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  -webkit-overflow-scrolling: touch;
+
+  // Example of an Override in RTL CSS
+  /*rtl:raw:
+  font-family: "DroidArabicNaskh", sans-serif;
+  font-size: 1.6rem;
+  direction: rtl;
+*/
+
+
+
+
+  // replace transition with some autoprifixer syntax
+  a,
+  button,
+  input {
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    outline: none;
+    color: $darkColor ;
+  }
+
+  // Scrollbar styles
+  & *::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    -webkit-transition: 0.3s background;
+    transition: 0.3s background;
+  }
+
+  & *::-webkit-scrollbar-thumb {
+    background: #ced4da;
+  }
+
+  & *:hover::-webkit-scrollbar-thumb {
+    background: #adb5bd;
+  }
+}

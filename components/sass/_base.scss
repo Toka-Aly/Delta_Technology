@@ -1,0 +1,173 @@
+// FONTS
+
+// DroidArabicNaskh Font
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/notosans-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/notosans-bold-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "DroidArabicNaskh";
+  src: url("../fonts/droidnaskh-regular.woff2") format("woff2");
+  font-weight: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "DroidArabicNaskh";
+  src: url("../fonts/droidnaskh-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/NotoSansDisplay-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: block;
+}
+@font-face {
+  font-family: "Noto";
+  src: url("../fonts/NotoNaskhArabic-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "Noto";
+  src: url("../fonts/NotoNaskhArabic-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Font-Awesome";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../fonts/fa-solid-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Font-Awesome";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/fa-regular-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Font-Awesome";
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url("../fonts/fa-light-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "timesExtraBold";
+  font-display: block;
+  src: url("../fonts/times-extrabold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "STIX2";
+  font-display: block;
+  src: url("../fonts/STIX2Text-Regular.woff2") format("woff2");
+  unicode-range: U+0000-00FF;
+}
+@font-face {
+  font-family: "STIX2";
+  font-display: block;
+  src: url("../fonts/STIX2Text-Bold.woff2") format("woff2");
+  font-weight: bold;
+  unicode-range: U+0000-00FF;
+}
+@font-face {
+  font-family: "STIX2";
+  font-display: block;
+  src: url("../fonts/STIX2Text-Italic.woff2") format("woff2");
+  font-style: italic;
+  unicode-range: U+0000-00FF;
+}
+@font-face {
+  font-family: "STIX2";
+  font-display: block;
+  src: url("../fonts/STIX2Text-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+  unicode-range: U+0000-00FF;
+}
+
+@font-face {
+  font-family: "STIX2Text-Regular";
+  font-display: block;
+  font-weight: normal;
+  src: url("../fonts/STIX2Text-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "STIX2Text-Bold";
+  font-display: block;
+  font-weight: bold;
+  src: url("../fonts/STIX2Text-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "STIX2Text-Italic";
+  font-display: block;
+  font-style: italic;
+  src: url("../fonts/STIX2Text-Italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "STIX2Text-BoldItalic";
+  font-display: block;
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/STIX2Text-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "NagwaMath";
+  font-display: block;
+  src: url("../fonts/NagwaMath.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "NagwaArabicMath";
+  font-display: block;
+  src: url("../fonts/NagwaArabicMath.woff2") format("woff2");
+}
+
+.shaker1 {
+  font-family: "Noto";
+}
+
+.shaker2 {
+  font-family: "NagwaMath";
+}
+
+.shaker3 {
+  font-family: "NagwaArabicMath";
+}
+
+.shaker4 {
+  font-family: "STIX2Text-Regular";
+}
+
+.shaker5 {
+  font-family: "STIX2Text-Bold";
+}
+
+.shaker6 {
+  font-family: "STIX2Text-Italic";
+}
+
+.shaker7 {
+  font-family: "STIX2Text-BoldItalic";
+}

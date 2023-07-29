@@ -1,0 +1,45 @@
+select,
+input {
+    outline: 0;
+    border: 0;
+    background: none;
+    border-radius: 0.5rem;
+    appearance: none;
+    cursor: pointer;
+    font-family: $enFont;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.custom-field {
+    &:read-only {
+        background-color: #C4C4C5;
+    }
+}
+
+.custom-field,
+.custom-select {
+    border: 1px solid #eee;
+    padding: 0 1.5rem;
+    height: 4rem;
+
+
+}
+
+.fields__field {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.fields__cta {
+    margin-top: 4rem;
+}
+
+form {
+    width: 100%;
+}

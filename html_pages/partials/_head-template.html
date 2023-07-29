@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Nagwa Careers">
+
+    <title>Nagwa Engage</title>
+
+    <link rel="shortcut icon" href="content/images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+
+    @@if (env === 'development') {
+        <link rel="stylesheet" type="text/css" href="content/css/app-rtl.css">
+    }
+    @@if (env === 'production') {
+        <link rel="stylesheet" type="text/css" href="content/css/app-min.css">
+    }
+</head>
+
+<body class="nagwa-homework">
+    <div class="global-wrapper">

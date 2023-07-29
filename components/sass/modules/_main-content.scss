@@ -1,0 +1,15 @@
+.container--has-sidebar {
+    display: flex;
+    align-items: flex-start;
+}
+
+.main__content {
+    flex: 1;
+    padding-inline-end: 4rem;
+}
+
+.two-fields {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(36rem, 1fr));
+    grid-gap: 2rem;
+}

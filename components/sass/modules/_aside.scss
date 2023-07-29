@@ -1,0 +1,37 @@
+.sidebar {
+    padding: 0 4rem;
+    padding-inline-end: 0;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    max-width: 35rem;
+    min-width: 30rem;
+
+    .fields {
+        margin-top: 4rem;
+    }
+}
+
+.navbar {
+    width: 100%;
+
+    li {
+        a {
+            font-size: 2rem;
+            color: #333;
+
+            &.active {
+                background-color: #ddd;
+            }
+        }
+    }
+}
+
+.sub-nav {
+    padding-inline-start: 2rem;
+    display: none;
+
+    .active & {
+        display: flex;
+    }
+}

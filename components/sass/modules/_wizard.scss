@@ -1,0 +1,68 @@
+.wizard__steps {
+    display: flex;
+    align-items: center;
+    color: $darkColor ;
+    background-color: $greyColor;
+    border: 1px solid $darkColor ;
+    border-radius: 0.5rem;
+
+    .wizard__steps__step {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 2rem;
+        background-color: transparent;
+        font-size: 1.5rem;
+        flex: 1;
+        border-left: 1px solid $darkColor;
+
+        &:first-child {
+            border: 0;
+        }
+
+        &.tab--active {
+            background-color: $darkColor ;
+            ;
+            color: white;
+        }
+    }
+
+}
+
+
+
+.wizard__content {
+    .details {
+        padding-top: 3rem;
+    }
+
+    .tabs {
+        .tab {
+            display: none;
+
+            &.tab--active {
+                display: block;
+            }
+        }
+
+    }
+}
+
+.wizard__buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    button{
+        &:last-child{
+            margin-inline-end: 10rem;
+        }
+    }
+}
+
+.wizard__buttons__two-btns {
+    display: flex;
+    align-items: center;
+    button{
+        margin-inline-end: 4rem;
+    }
+}

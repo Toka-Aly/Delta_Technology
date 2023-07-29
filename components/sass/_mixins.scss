@@ -1,0 +1,394 @@
+@mixin hide {
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: none;
+  display: none !important;
+}
+
+@mixin hideText {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+}
+
+// This is to override the clearfix mixin
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// To make :before a fontawesome icon
+
+@mixin fontAwesomeIcon($icon-code, $weight: 300) {
+  content: $icon-code;
+  font-family: $fAwsome;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+  font-weight: $weight;
+}
+
+/* === Calc Mixin ==== */
+/* ==== Usage example
+@include calc( width, '100% - 2px');
+===================*/
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+/* This is to override the box-sizing mixin in compass so that the deprecated warning doesn't show */
+@mixin box-sizing($box-model: $default-box-sizing) {
+  @if type-of($box-model) == string {
+    $box-model: unquote($box-model);
+  }
+  @include prefixed-properties(
+    css3-boxsizing,
+    $box-sizing-support-threshold,
+    (
+      box-sizing: $box-model,
+    )
+  );
+}
+
+@mixin backgroundImage(
+  $image,
+  $size: initial,
+  $horizontal: center,
+  $vertical: center,
+  $repeat: no-repeat
+) {
+  background-image: url("../images/" + $image);
+  background-size: $size;
+  background-position: $horizontal $vertical;
+  background-repeat: $repeat;
+}
+
+@mixin headingFont($font: $hFont, $size: 24, $weight: noraml) {
+  font-family: $font;
+  font-size: $size + px;
+  font-weight: $weight;
+}
+
+@mixin button(
+  $bgColor: #333,
+  $borderColor: #333,
+  $hoverColor: #333,
+  $hoverBg: $white,
+  $hoverBorder: #333,
+  $borderWidth: 1,
+  $borderRadius: 3,
+  $textColor: $white,
+  $height: 30,
+  $font: $hFont,
+  $fontSize: 12,
+  $fontWeight: 400,
+  $letterSpace: 0,
+  $padding: 15
+) {
+  padding: 0 $padding + px;
+  border-radius: $borderRadius + px;
+  background: $bgColor;
+  height: $height + px;
+  line-height: ($height - 1) + px;
+  color: $textColor;
+  border: solid $borderWidth + px $borderColor;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-family: $font;
+  font-size: $fontSize + px;
+  font-weight: $fontWeight;
+  text-transform: uppercase;
+  letter-spacing: $letterSpace + px;
+  outline: none;
+
+  &:hover {
+    color: $hoverColor;
+    background: $hoverBg;
+    border-color: $hoverBorder;
+  }
+}
+
+@mixin sectionHeader($font: $bodyFont, $size: 36, $textColor: $congressblue) {
+  width: 100%;
+  clear: both;
+
+  h3 {
+    font-family: $font;
+    font-size: $size + px;
+    color: $textColor;
+    text-align: center;
+
+    @media screen and (max-width: $phoneLandscape) {
+      font-size: 24px;
+    }
+  }
+}
+
+@mixin buttonReset() {
+  outline: 0;
+  border: 0;
+  background: none;
+  border-radius: 2.5rem;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: $enFont;
+}
+
+/* main properties that control the layout direction are:
+-----------------------------------------------
+- direction (LTR/RTL)
+- text-align
+- float (left/right)
+- margin 
+- padding
+- absolute position (left/right)
+- border
+- note: "think about flexbox properties"
+- background position (left/right)
+- border radious
+*/
+
+/*********************************************************
+    // direction
+**********************************************************/
+
+@mixin dir-direction($value) {
+  @if $value==ltr {
+    html[dir="ltr"] & {
+      direction: ltr;
+    }
+
+    html[dir="rtl"] & {
+      direction: rtl;
+    }
+  } @else if $value==rtl {
+    html[dir="ltr"] & {
+      direction: rtl;
+    }
+
+    html[dir="rtl"] & {
+      direction: ltr;
+    }
+  } @else {
+    direction: inherit;
+  }
+}
+
+/*********************************************************
+    // text-align
+**********************************************************/
+
+@mixin dir-text-align($value, $importance: null) {
+  @if $value==left {
+    html[dir="ltr"] & {
+      text-align: left $importance;
+    }
+
+    html[dir="rtl"] & {
+      text-align: right $importance;
+    }
+  } @else if $value==right {
+    html[dir="ltr"] & {
+      text-align: right $importance;
+    }
+
+    html[dir="rtl"] & {
+      text-align: left $importance;
+    }
+  } @else {
+    text-align: inherit;
+  }
+}
+
+/*********************************************************
+    // float
+**********************************************************/
+
+@mixin dir-float($value, $importnace: null) {
+  @if $value==left {
+    html[dir="ltr"] & {
+      float: left $importnace;
+    }
+
+    html[dir="rtl"] & {
+      float: right $importnace;
+    }
+  } @else if $value==right {
+    html[dir="ltr"] & {
+      float: right $importnace;
+    }
+
+    html[dir="rtl"] & {
+      float: left $importnace;
+    }
+  } @else {
+    float: none;
+  }
+}
+
+/*********************************************************
+    // margin
+**********************************************************/
+
+@mixin dir-margin($top, $right, $bottom, $left, $importnace: null) {
+  html[dir="ltr"] & {
+    margin: $top $right $bottom $left $importnace;
+  }
+
+  html[dir="rtl"] & {
+    margin: $top $left $bottom $right $importnace;
+  }
+}
+
+@mixin dir-margin-left($value) {
+  html[dir="ltr"] & {
+    margin-left: $value;
+  }
+
+  html[dir="rtl"] & {
+    margin-right: $value;
+  }
+}
+
+@mixin dir-margin-right($value) {
+  html[dir="ltr"] & {
+    margin-right: $value;
+  }
+
+  html[dir="rtl"] & {
+    margin-left: $value;
+  }
+}
+
+/*********************************************************
+    // padding
+**********************************************************/
+
+@mixin dir-padding($top, $right, $bottom, $left, $importnace: null) {
+  html[dir="ltr"] & {
+    padding: $top $right $bottom $left $importnace;
+  }
+
+  html[dir="rtl"] & {
+    padding: $top $left $bottom $right $importnace;
+  }
+}
+
+@mixin dir-padding-left($value) {
+  html[dir="ltr"] & {
+    padding-left: $value;
+  }
+
+  html[dir="rtl"] & {
+    padding-right: $value;
+  }
+}
+
+@mixin dir-padding-right($value) {
+  html[dir="ltr"] & {
+    padding-right: $value;
+  }
+
+  html[dir="rtl"] & {
+    padding-left: $value;
+  }
+}
+
+/*********************************************************
+    // border
+**********************************************************/
+
+@mixin dir-border-left($value) {
+  html[dir="ltr"] & {
+    border-left: $value;
+  }
+
+  html[dir="rtl"] & {
+    border-right: $value;
+  }
+}
+
+@mixin dir-border-right($value) {
+  html[dir="ltr"] & {
+    border-right: $value;
+  }
+
+  html[dir="rtl"] & {
+    border-left: $value;
+  }
+}
+
+/*********************************************************
+    // left and right properties for absolute position
+**********************************************************/
+
+@mixin dir-left($value) {
+  html[dir="ltr"] & {
+    left: $value;
+  }
+
+  html[dir="rtl"] & {
+    right: $value;
+  }
+}
+
+@mixin dir-right($value) {
+  html[dir="ltr"] & {
+    right: $value;
+  }
+
+  html[dir="rtl"] & {
+    left: $value;
+  }
+}
+
+/*********************************************************
+    // handling not handled props
+**********************************************************/
+
+@mixin dir-ltr() {
+  html[dir="ltr"] & {
+    @content;
+  }
+}
+
+@mixin dir-rtl() {
+  html[dir="rtl"] & {
+    @content;
+  }
+}
+
+/* Clearfix */
+
+@mixin clearfix {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+/*********************************************************
+    // handling font awesome icon
+**********************************************************/
+
+@mixin fontAwesomeIcon($icon-code, $weight: 300) {
+  content: $icon-code;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+  font-weight: $weight;
+}
