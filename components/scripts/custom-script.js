@@ -33,3 +33,14 @@ $(document).ready(function () {
     });
   });
 });
+
+// Accordion
+$(".accordion .title").click(function () {
+  const el = $(this);
+  const elParent = el.closest(".accordion-section");
+  const targetContent = elParent.find(".content");
+  $(".accordion .title").removeClass("active");
+  $(".accordion .accordion-section .content").slideUp();
+  targetContent.slideDown();
+  el.addClass("active");
+});

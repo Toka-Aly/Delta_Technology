@@ -1,5 +1,6 @@
 select,
-input {
+input,
+textarea {
     outline: 0;
     border: 0;
     background: none;
@@ -8,7 +9,6 @@ input {
     cursor: pointer;
     font-family: $enFont;
     transition: 0.3s;
-    width: 100%;
 }
 
 .custom-field {
@@ -18,22 +18,25 @@ input {
 }
 
 .custom-field,
-.custom-select {
+.custom-select,
+.custom-textarea {
     border: 1px solid #eee;
     padding: 0 1.5rem;
-    height: 4rem;
-
-
+    height: 4rem
 }
 
 .fields__field {
     margin-bottom: 1rem;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 
     &:last-child {
         margin-bottom: 0;
     }
+}
+
+.label {
+    font-size: 1.5rem;
 }
 
 .fields__cta {

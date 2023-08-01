@@ -1,68 +1,65 @@
-.wizard__steps {
-    display: flex;
-    align-items: center;
-    color: $darkColor ;
-    background-color: $greyColor;
-    border: 1px solid $darkColor ;
-    border-radius: 0.5rem;
+.accordion {
+    text-align: left;
+    padding-top: 30px;
 
-    .wizard__steps__step {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem 2rem;
-        background-color: transparent;
-        font-size: 1.5rem;
-        flex: 1;
-        border-left: 1px solid $darkColor;
+    .accordion-section {
+        margin-bottom: 20px;
+        position: relative;
 
-        &:first-child {
-            border: 0;
-        }
+        .title {
+            color: $primaryColor;
+            background: rgba($color: $primaryColor, $alpha:0.05);
+            border: 1px solid #bfbfbf;
+            padding: 1.5rem 0;
+            padding-left: 5rem;
+            position: relative;
+            border-radius: 1rem;
 
-        &.tab--active {
-            background-color: $darkColor ;
-            ;
-            color: white;
-        }
-    }
-
-}
-
-
-
-.wizard__content {
-    .details {
-        padding-top: 3rem;
-    }
-
-    .tabs {
-        .tab {
-            display: none;
-
-            &.tab--active {
-                display: block;
+            h3 {
+                font-size: 2rem;
+                font-weight: 300;
+                margin: 0;
             }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 1.5rem;
+                height: 1.5rem;
+                border: 2px solid #707070;
+                border-radius: 50%;
+                background: transparent;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                left: 2.5rem;
+
+            }
+
+
+            &.active {
+                &::after {
+                    content: "";
+                    display: block;
+                    background: #015cab;
+                    width: 1rem;
+                    height: 1rem;
+                    position: absolute;
+                    border-radius: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    left: 2.5rem;
+                }
+            }
+
+
         }
 
+        .content {
+            margin-top: 2rem;
+        }
     }
 }
 
-.wizard__buttons {
-    display: flex;
-    align-items: center;
-    margin-top: 3rem;
-    button{
-        &:last-child{
-            margin-inline-end: 10rem;
-        }
-    }
-}
-
-.wizard__buttons__two-btns {
-    display: flex;
-    align-items: center;
-    button{
-        margin-inline-end: 4rem;
-    }
+.accordion .accordion-section:not(:first-of-type) .content {
+    display: none;
 }

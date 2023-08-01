@@ -23,26 +23,10 @@ var env,
 env = process.env.NODE_ENV || "development";
 if (env === "development") {
   outputDir = "builds/development/";
-  jsSources = [
-    "components/scripts/jquery.js",
-    "components/scripts/slick.min.js",
-    "components/scripts/chart.js",
-    "components/scripts/doughnut-chart.js",
-    "components/scripts/jquery-ui.js",
-    "components/scripts/jquery.magnific-popup.js",
-    "components/scripts/select2.js",
-  ];
+  jsSources = ["components/scripts/jquery.js"];
 } else {
   outputDir = "builds/production/";
-  jsSources = [
-    "components/scripts/jquery.js",
-    "components/scripts/chart.js",
-    "components/scripts/slick.min.js",
-    "components/scripts/doughnut-chart.js",
-    "components/scripts/jquery-ui.js",
-    "components/scripts/select2.js",
-    "components/scripts/jquery.magnific-popup.js",
-  ];
+  jsSources = ["components/scripts/jquery.js"];
 }
 htmlSources = [outputDir + "*.html"];
 
