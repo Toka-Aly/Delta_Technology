@@ -31,6 +31,7 @@
     button,
     a {
         margin-inline-end: 1rem;
+        font-size: 1.6rem;
 
         &:last-child {
             margin: 0;
@@ -87,12 +88,14 @@
         margin-bottom: 2rem;
     }
 }
-.page-title{
+
+.page-title {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 1rem;
-    h1{
-        font-size: 2.5rem;
+
+    h1 {
+        font-size: 2.2rem;
     }
 }

@@ -17,7 +17,7 @@
 
     li {
         a {
-            font-size: 2rem;
+            font-size: 1.7rem;
             color: #333;
             display: flex;
             align-items: center;
@@ -45,8 +45,9 @@
     &.active {
         display: block;
     }
-    a{
-        &.selected{
+
+    a {
+        &.selected {
             color: $primaryColor;
         }
     }

@@ -20,3 +20,20 @@
     padding: 4rem 6rem;
   }
 }
+
+.close-popup {
+  @extend %btn;
+  padding: 0;
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  min-width: auto;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+}
+
+.mfp-close {
+  display: none !important;
+}
