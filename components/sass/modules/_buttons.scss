@@ -17,7 +17,8 @@
     text-transform: uppercase;
     pointer-events: all;
     border-radius: 0.5rem;
-min-width: 10rem;
+    min-width: 10rem;
+
     &[disabled] {
         pointer-events: none;
         opacity: 0.5;
@@ -28,7 +29,8 @@ min-width: 10rem;
     @extend %btn;
     background-color: $primaryColor;
     color: white;
-    &:hover{
+
+    &:hover {
         background-color: rgba($color: $primaryColor, $alpha: 0.7)
     }
 }
@@ -37,7 +39,12 @@ min-width: 10rem;
     @extend %btn;
     background-color: $secondaryColor;
     color: $darkColor;
-    &:hover{
+
+    &:hover {
         background-color: rgba($color: $secondaryColor, $alpha: 0.7)
     }
+}
+
+.btn-link {
+    @extend %btn;
 }
