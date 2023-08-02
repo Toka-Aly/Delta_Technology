@@ -16,7 +16,7 @@ body {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   -webkit-overflow-scrolling: touch;
-
+  font-weight: 600;
   // Example of an Override in RTL CSS
   /*rtl:raw:
   font-family: "DroidArabicNaskh", sans-serif;
@@ -39,18 +39,17 @@ body {
   }
 
   // Scrollbar styles
-  & *::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-    -webkit-transition: 0.3s background;
-    transition: 0.3s background;
+  &::-webkit-scrollbar {
+    display: none;
   }
 
-  & *::-webkit-scrollbar-thumb {
-    background: #ced4da;
+  &::-webkit-scrollbar-thumb {
+    display: none;
   }
 
-  & *:hover::-webkit-scrollbar-thumb {
-    background: #adb5bd;
+  &:hover::-webkit-scrollbar-thumb {
+    display: none;
   }
+
+
 }

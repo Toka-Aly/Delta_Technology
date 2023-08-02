@@ -1,0 +1,162 @@
+<main class="main">
+  <div class="container container--has-sidebar">
+    <aside class="sidebar">
+      <ul class="navbar">
+        <li class="logo">
+          <a href="create_transaction.html">
+            <figure><img src="content/images/logo.png" alt="" /></figure>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active"> انشاء معاملة جديدة </a>
+          <ul class="sub-nav active">
+            <li>
+              <a href="#" class="selected"> انشاء صادر </a>
+            </li>
+            <li>
+              <a href="#"> انشاء وارد </a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#"> المسودة </a>
+        </li>
+        <li>
+          <a href="#"> التقرير </a>
+        </li>
+        <li>
+          <a href="#"> التنبيهات </a>
+        </li>
+      </ul>
+    </aside>
+    <div class="main__content">
+      <div class="main__content__forms-content">
+        <form action="" class="fields">
+          <div class="fields__field">
+            <label for="" class="label"> رقم الاقرار بالنظام </label>
+            <input type="text" class="custom-field" value="11000" />
+          </div>
+          <div class="actions">
+            <button class="btn-grey">بحث عن رقم الاقرار</button>
+            <button class="btn-grey">تحميل البيانات</button>
+          </div>
+        </form>
+        <form action="" class="fields">
+          <div class="fields__field">
+            <label for="" class="label"> تحميل الملف للنظام </label>
+            <input
+              type="file"
+              data-multiple-caption="{count} files selected"
+              class="custom-field input-upload"
+              multiple
+            />
+            <span>تحميل الملف </span>
+          </div>
+        </form>
+        <div class="two-fields">
+          <form action="" class="fields">
+            <div class="fields__field">
+              <label for="" class="label"> رقم التسجيل </label>
+              <input type="text" class="custom-field" />
+            </div>
+            <div class="fields__field">
+              <label for="" class="label"> التاريخ </label>
+              <input
+                type="text"
+                class="custom-field input-date"
+                placeholder="dd-mm-yy"
+              />
+            </div>
+            <div class="fields__field">
+              <label for="" class="label"> مندوب الهيئة </label>
+              <select name="" id="" class="custom-select">
+                <option value="">مندوب الهيئة</option>
+                <option value="">مندوب الهيئة</option>
+              </select>
+            </div>
+          </form>
+          <form action="" class="fields">
+            <div class="fields__field">
+              <label for="" class="label">
+                اجمالى الرسوم المغطاه بالضمان
+              </label>
+              <input type="text" class="custom-field" />
+            </div>
+
+            <div class="fields__field">
+              <label for="" class="label"> مندوب الجمرك </label>
+              <select name="" id="" class="custom-select">
+                <option value="">مندوب الجمرك</option>
+                <option value="">مندوب الجمرك</option>
+              </select>
+            </div>
+            <div class="fields__field">
+              <label for="" class="label"> مندوب المشروع</label>
+              <select name="" id="" class="custom-select">
+                <option value="">مندوب المشروع</option>
+                <option value="">مندوب المشروع</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="two-fields">
+          <form action="" class="fields">
+            <div class="fields__field">
+              <label for="" class="label"> رقم مسلسل عام </label>
+              <input type="text" class="custom-field" value="55556666" />
+            </div>
+            <div class="fields__field">
+              <label for="" class="label"> التاريخ </label>
+              <input
+                type="text"
+                class="custom-field input-date"
+                placeholder="dd-mm-yy"
+              />
+            </div>
+
+            <div class="fields__field checkbox-check">
+              <input type="checkbox" />
+              <span class="check-mark"></span>
+              <i> تم سحب عينة</i>
+            </div>
+          </form>
+          <form action="" class="fields">
+            <div class="fields__field">
+              <label for="" class="label"> مسلسل خاص </label>
+              <input type="text" class="custom-field" />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="actions">
+        <a
+          href="successful-message.html"
+          class="btn-primary"
+          data-type="modal"
+          data-target="saved-popup"
+        >
+          انشاء قرار
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div
+  id="saved-popup"
+  class="mfp-with-anim mfp-hide normal-popup left-popup medium-popup no-padding"
+  data-effect="mfp-zoom-in"
+>
+  <div class="wrapper">
+    <div class="wrapper__content wrapper__content--edit-profile">
+      <div class="wrapper__content__body">
+        <div class="message-view">
+          <div class="message-veiw__container">
+            <p>تم حفظ اقرار بنجاح</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,14 +1,11 @@
 .accordion {
-    text-align: left;
-    padding-top: 30px;
-
     .accordion-section {
         margin-bottom: 20px;
         position: relative;
 
         .title {
             color: $primaryColor;
-            background: rgba($color: $primaryColor, $alpha:0.05);
+            background: rgba($color: $primaryColor, $alpha: 0.05);
             border: 1px solid #bfbfbf;
             padding: 1.5rem 0;
             padding-left: 5rem;
@@ -17,7 +14,7 @@
 
             h3 {
                 font-size: 2rem;
-                font-weight: 300;
+                font-weight: 600;
                 margin: 0;
             }
 
@@ -40,7 +37,7 @@
                 &::after {
                     content: "";
                     display: block;
-                    background: #015cab;
+                    background: $primaryColor;
                     width: 1rem;
                     height: 1rem;
                     position: absolute;

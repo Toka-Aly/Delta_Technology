@@ -28,10 +28,16 @@ min-width: 10rem;
     @extend %btn;
     background-color: $primaryColor;
     color: white;
+    &:hover{
+        background-color: rgba($color: $primaryColor, $alpha: 0.7)
+    }
 }
 
 .btn-grey {
     @extend %btn;
     background-color: $secondaryColor;
     color: $darkColor;
+    &:hover{
+        background-color: rgba($color: $secondaryColor, $alpha: 0.7)
+    }
 }

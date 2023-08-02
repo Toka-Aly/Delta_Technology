@@ -1,11 +1,11 @@
 .sidebar {
-    padding: 0 4rem;
-    padding-inline-end: 0;
-    display: flex;
-    align-items: center;
-    width: 25%;
-    max-width: 35rem;
-    min-width: 30rem;
+    width: 15%;
+    max-width: 25rem;
+    min-width: 20rem;
+    border-right: 1px solid #eee;
+    height: 100vh;
+    position: sticky;
+    top: 0;
 
     .fields {
         margin-top: 4rem;
@@ -19,9 +19,19 @@
         a {
             font-size: 2rem;
             color: #333;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background-color: transparent;
+            transition: all .3s;
 
             &.active {
-                background-color: #ddd;
+                background-color: #727476;
+                color: white;
+
+                .sub-nav {
+                    display: block;
+                }
             }
         }
     }
@@ -30,8 +40,14 @@
 .sub-nav {
     padding-inline-start: 2rem;
     display: none;
+    background-color: #e5e5e6;
 
-    .active & {
-        display: flex;
+    &.active {
+        display: block;
+    }
+    a{
+        &.selected{
+            color: $primaryColor;
+        }
     }
 }

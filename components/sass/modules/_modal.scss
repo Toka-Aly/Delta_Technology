@@ -1,0 +1,22 @@
+.normal-popup {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.6rem;
+  max-width: 40rem;
+  width: 100%;
+  margin: auto;
+
+  .message-view {
+    height: auto;
+
+    .message-veiw__container {
+      min-width: unset;
+      width: 100%;
+      background-color: transparent;
+    }
+  }
+
+  .wrapper__content__body {
+    padding: 4rem 6rem;
+  }
+}

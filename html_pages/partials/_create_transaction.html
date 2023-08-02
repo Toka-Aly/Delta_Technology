@@ -2,224 +2,362 @@
   <div class="container container--has-sidebar">
     <aside class="sidebar">
       <ul class="navbar">
+        <li class="logo">
+          <a href="create_transaction.html">
+            <figure><img src="content/images/logo.png" alt="" /></figure>
+          </a>
+        </li>
         <li>
-          <a href="#" class="active"> Create an export </a>
-          <ul class="sub-nav">
+          <a href="#" class="active"> انشاء معاملة جديدة </a>
+          <ul class="sub-nav active">
             <li>
-              <a href="#"> Create an outcoming </a>
+              <a href="#" class="selected"> انشاء صادر </a>
             </li>
             <li>
-              <a href="#"> Create an incoming </a>
+              <a href="#"> انشاء وارد </a>
             </li>
           </ul>
         </li>
+
         <li>
-          <a href="#"> Inbox </a>
+          <a href="#"> المسودة </a>
         </li>
         <li>
-          <a href="#"> Draft </a>
+          <a href="#"> التقرير </a>
         </li>
         <li>
-          <a href="#"> Outcoming </a>
-        </li>
-        <li>
-          <a href="#"> Search </a>
-        </li>
-        <li>
-          <a href="#">Report</a>
+          <a href="#"> التنبيهات </a>
         </li>
       </ul>
     </aside>
     <div class="main__content">
-      <div class="wizard">
-        <div class="wizard__steps">
-          <div class="wizard__steps__step">
-            <p>Customs Declaration</p>
-          </div>
-          <div class="wizard__steps__step">
-            <p>Companies</p>
-          </div>
-          <div class="wizard__steps__step">
-            <p>Policy</p>
-          </div>
-          <div class="wizard__steps__step">
-            <p>Contract Type</p>
-          </div>
-          <div class="wizard__steps__step">
-            <p>Items Details</p>
-          </div>
-          <div class="wizard__steps__step">
-            <p>Requests</p>
-          </div>
-        </div>
-        <div class="wizard__content">
-          <div class="wizard__content__body">
-            <div class="tabs">
-              <div class="tab">
-                <div class="details">
-                  <div class="two-fields">
-                    <form action="" class="fields">
-                      <div class="fields__field">
-                        <select name="" id="" class="custom-select">
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4</option>
-                        </select>
-                      </div>
-                      <div class="fields__field">
-                        <select name="" id="" class="custom-select">
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4</option>
-                        </select>
-                      </div>
-                      <div class="fields__field">
-                        <input
-                          type="input"
-                          class="custom-field"
-                          value="2222"
-                          readonly
-                        />
-                      </div>
-                    </form>
-                    <form action="" class="fields">
-                      <div class="fields__field">
-                        <input
-                          type="password"
-                          class="custom-field"
-                          placeholder="input"
-                        />
-                      </div>
-                      <div class="fields__field">
-                        <input
-                          type="password"
-                          class="custom-field"
-                          placeholder="input"
-                        />
-                      </div>
-                      <div class="fields__field">
-                        <input
-                          type="password"
-                          class="custom-field"
-                          placeholder="input"
-                          readonly
-                        />
-                      </div>
-                    </form>
+      <div class="title">
+        <h1>
+          وارد سماح مؤقت
+        </h1>
+      </div>
+      <div class="accordions">
+        <div class="accordion">
+          <div class="accordion-section">
+            <div class="title active">
+              <h3>الاقرار الجمركى</h3>
+            </div>
+            <div class="content">
+              <div class="two-fields">
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label"> الجمرك</label>
+                    <select name="" id="" class="custom-select">
+                      <option value="">جمرك العامة</option>
+                      <option value="">الميناء الجاف</option>
+                    </select>
                   </div>
-                </div>
-                <div class="wizard__buttons">
-                  <div class="wizard__buttons__two-btns">
-                    <button class="btn-grey wizard-next-btn">التالي</button>
-                    <button class="btn-grey wizard-prev-btn">التالي</button>
+                  <div class="fields__field">
+                    <label for="" class="label"> المجمع </label>
+                    <select name="" id="" class="custom-select">
+                      <option value="">مدينة نصر</option>
+                      <option value="">اخري</option>
+                    </select>
                   </div>
-                  <button class="btn-grey wizard-next-btn">التالي</button>
-                </div>
-              </div>
-              <div class="tab">
-                <div class="details">
-                  <div class="two-fields">
-                    <form action="" class="fields">
-                      <div class="fields__field">
-                        <select name="" id="" class="custom-select">
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4</option>
-                        </select>
-                      </div>
-                      <div class="fields__field">
-                        <select name="" id="" class="custom-select">
-                          <option value="">1</option>
-                          <option value="">2</option>
-                          <option value="">3</option>
-                          <option value="">4</option>
-                        </select>
-                      </div>
-                      <div class="fields__field">
-                        <input
-                          type="input"
-                          class="custom-field"
-                          value="2222"
-                          readonly
-                        />
-                      </div>
-                    </form>
-                    <form action="" class="fields">
-                      <div class="fields__field">
-                        <input
-                          type="password"
-                          class="custom-field"
-                          placeholder="input"
-                        />
-                      </div>
-                      <div class="fields__field">
-                        <input
-                          type="password"
-                          class="custom-field"
-                          placeholder="input"
-                        />
-                      </div>
-                      <div class="fields__field">
-                        <input
-                          type="password"
-                          class="custom-field"
-                          placeholder="input"
-                          readonly
-                        />
-                      </div>
-                    </form>
+                </form>
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label"> رقم التسجيل </label>
+                    <input
+                      type="text"
+                      class="custom-field"
+                      placeholder="رقم التسجيل"
+                    />
                   </div>
-                </div>
-                <div class="wizard__buttons">
-                  <div class="wizard__buttons__two-btns">
-                    <button class="btn-grey wizard-next-btn">التالي</button>
-                    <button class="btn-grey wizard-prev-btn">التالي</button>
+                  <div class="fields__field">
+                    <label for="" class="label"> التاريخ </label>
+                    <input
+                      type="text"
+                      class="custom-field input-date"
+                      placeholder="dd-mm-yy"
+                    />
                   </div>
-                  <button class="btn-grey wizard-next-btn">التالي</button>
-                </div>
+                </form>
               </div>
-              <div class="tab">
-                <div class="details">text 3</div>
-                <div class="wizard__buttons">
-                  <button class="btn blue-btn wizard-next-btn">
-                    Pay Now
-                    <span> -> </span>
-                  </button>
-                </div>
+            </div>
+          </div>
+          <div class="accordion-section">
+            <div class="title">
+              <h3>الشركات</h3>
+            </div>
+            <div class="content">
+              <div class="two-fields">
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label"> القطاع</label>
+                    <select name="" id="" class="custom-select">
+                      <option value="">استثمار</option>
+                      <option value="">حكومي</option>
+                      <option value="">عام</option>
+                      <option value="">خاص</option>
+                    </select>
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> اسم المستورد </label>
+                    <select name="" id="" class="custom-select">
+                      <option value="">دلتا فابريك مصر</option>
+                      <option value="">اخري</option>
+                    </select>
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label">
+                      رقم البطاقه الاستيراديه
+                    </label>
+                    <input type="text" class="custom-field" value="55556666" />
+                  </div>
+                </form>
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label"> رقم السجل </label>
+                    <input
+                      type="text"
+                      class="custom-field"
+                      placeholder="123456"
+                    />
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> العنوان </label>
+                    <input
+                      type="text"
+                      class="custom-field"
+                      placeholder="دلتا فابريك مصر "
+                    />
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> رقم البطاقه الضريبيه</label>
+                    <input
+                      type="text"
+                      class="custom-field"
+                      placeholder="123456"
+                    />
+                  </div>
+                </form>
               </div>
-              <div class="tab">
-                <div class="details">text 4</div>
-                <div class="wizard__buttons">
-                  <button class="btn blue-btn wizard-next-btn">
-                    Pay Now
-                    <span> -> </span>
-                  </button>
-                </div>
+            </div>
+          </div>
+          <div class="accordion-section">
+            <div class="title">
+              <h3>المستخلص</h3>
+            </div>
+            <div class="content">
+              <div class="two-fields">
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label"> اسم مقدم الاقرار</label>
+                    <select name="" id="" class="custom-select">
+                      <option value="">المستخلص 1</option>
+                      <option value="">المستخلص 2</option>
+                      <option value="">المستخلص 3</option>
+                      <option value="">المستخلص 4</option>
+                    </select>
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> اسم المستورد </label>
+                    <select name="" id="" class="custom-select">
+                      <option value="">دلتا فابريك مصر</option>
+                      <option value="">اخري</option>
+                    </select>
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> رقم رخصة التخليص </label>
+                    <input type="text" class="custom-field" value="6666" />
+                  </div>
+                </form>
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label"> صفته </label>
+                    <input
+                      type="text"
+                      class="custom-field"
+                      placeholder="صفه1"
+                    />
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> رقم البطاقه الضريبيه </label>
+                    <input
+                      type="text"
+                      class="custom-field"
+                      placeholder=" 8899 "
+                    />
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> العنوان </label>
+                    <input
+                      type="text"
+                      class="custom-field"
+                      placeholder="عنوان المستخلص"
+                    />
+                  </div>
+                </form>
               </div>
-              <div class="tab">
-                <div class="details">text 5</div>
-                <div class="wizard__buttons">
-                  <button class="btn blue-btn wizard-next-btn">
-                    Pay Now
-                    <span> -> </span>
-                  </button>
-                </div>
+            </div>
+          </div>
+          <div class="accordion-section">
+            <div class="title">
+              <h3>البوليصة</h3>
+            </div>
+            <div class="content">
+              <div class="two-fields">
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label">الباخرة / الطائرة </label>
+                    <input type="text" class="custom-field" value="55556666" />
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> التاريخ </label>
+                    <input
+                      type="text"
+                      class="custom-field input-date"
+                      placeholder="dd-mm-yy"
+                    />
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> اسم المستورد </label>
+                    <select name="" id="" class="custom-select">
+                      <option value="">دلتا فابريك مصر</option>
+                      <option value="">اخري</option>
+                    </select>
+                  </div>
+                </form>
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label"> رقم البوليصة </label>
+                    <input
+                      type="text"
+                      class="custom-field"
+                      placeholder=" AB15194815181  "
+                    />
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label">بلد المشأ </label>
+                    <select name="" id="" class="custom-select">
+                      <option value="">مصر</option>
+                      <option value="">الصين</option>
+                    </select>
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> ميناء الشحن </label>
+                    <input type="text" class="custom-field" />
+                  </div>
+                </form>
               </div>
-              <div class="tab">
-                <div class="details">text 6</div>
-                <div class="wizard__buttons">
-                  <button class="btn blue-btn wizard-next-btn">
-                    Pay Now
-                    <span> -> </span>
-                  </button>
-                </div>
+            </div>
+          </div>
+          <div class="accordion-section">
+            <div class="title">
+              <h3>نوع التعاقد</h3>
+            </div>
+            <div class="content">
+              <div class="two-fields">
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label"> نوع التعاقد </label>
+                    <select name="" id="" class="custom-select">
+                      <option value="">CIF</option>
+                      <option value="">FOB</option>
+                      <option value="">EX-WORX</option>
+                      <option value="">C&F</option>
+                    </select>
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> نوع العملة </label>
+                    <select name="" id="" class="custom-select">
+                      <option value="">USD $</option>
+                      <option value="">جنية مصري LE</option>
+                    </select>
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> قيمة الفاتورة </label>
+                    <input type="text" class="custom-field" value="11000" />
+                  </div>
+                </form>
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label"> قيمة التأمين </label>
+                    <input type="text" class="custom-field" placeholder="" />
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> قيمة النولون </label>
+                    <input type="text" class="custom-field" />
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> قيمة التفريغ </label>
+                    <input
+                      type="text"
+                      class="custom-field"
+                      placeholder="123456"
+                    />
+                  </div>
+                </form>
+              </div>
+              <div class="two-fields">
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label"> رقم رخصة التخليص </label>
+                    <input type="text" class="custom-field" value="55556666" />
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> التاريخ </label>
+                    <input
+                      type="text"
+                      class="custom-field input-date"
+                      placeholder="dd-mm-yy"
+                    />
+                  </div>
+                </form>
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label"> رقم الاعتماد </label>
+                    <input type="text" class="custom-field" />
+                  </div>
+                  <div class="fields__field">
+                    <label for="" class="label"> قيمة الاعتماد</label>
+                    <input type="text" class="custom-field" />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-section">
+            <div class="title">
+              <h3>طلبات صاحب الشأن</h3>
+            </div>
+            <div class="content">
+              <div class="two-fields">
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label"> طلبات صاحب الشأن</label>
+                    <textarea
+                      class="custom-textarea"
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </div>
+                </form>
+                <form action="" class="fields">
+                  <div class="fields__field">
+                    <label for="" class="label"> التاريخ </label>
+                    <input
+                      type="text"
+                      class="custom-field input-date"
+                      placeholder="dd-mm-yy"
+                    />
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="actions">
+        <a href="successful-message.html" class="btn-primary"> انشاء قرار </a>
       </div>
     </div>
   </div>

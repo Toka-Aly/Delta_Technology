@@ -13,7 +13,7 @@ textarea {
 
 .custom-field {
     &:read-only {
-        background-color: #C4C4C5;
+        background-color: #f6f6f6;
     }
 }
 
@@ -22,21 +22,49 @@ textarea {
 .custom-textarea {
     border: 1px solid #eee;
     padding: 0 1.5rem;
-    height: 4rem
+    height: 4rem;
+    font-size: 1.5rem;
+}
+
+.custom-select {
+    background: url("/content/images/chevron-left-solid.svg");
+    background-position: center right 1.5rem;
+    background-repeat: no-repeat;
+    background-size: 0.8rem;
+
 }
 
 .fields__field {
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
+    position: relative;
 
     &:last-child {
         margin-bottom: 0;
     }
+
+    span {
+        border: 1px solid #eee;
+        padding: 0 1.5rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: $primaryColor;
+            color: white;
+            text-decoration: none;
+        }
+    }
 }
 
 .label {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-inline-start: 1rem;
 }
 
 .fields__cta {
@@ -45,4 +73,83 @@ textarea {
 
 form {
     width: 100%;
+}
+
+
+.input-date {
+    background: url("/content/images/calendar-days-solid.svg");
+    background-position: center right 1.5rem;
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+}
+
+textarea {
+    padding: 1rem 1.5rem;
+}
+
+
+.input-upload {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+
+    &:focus+span {
+        background-color: white;
+        color: $primaryColor;
+        text-decoration: none;
+    }
+
+
+}
+
+
+.checkbox-check {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    flex-direction: inherit;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+
+        &:checked+.check-mark:before {
+            transform: scale(1);
+        }
+    }
+
+    .check-mark {
+        width: 20px;
+        height: 20px;
+        border: solid 1px #eee;
+        border-radius: 5px;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+
+        &:before {
+            content: "";
+            width: 15px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+            height: 15px;
+            background-color: $primaryColor;
+        }
+    }
+
+    i {
+        margin-left: 5px;
+    }
 }
