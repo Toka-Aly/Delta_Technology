@@ -2,7 +2,6 @@
     outline: 0;
     border: 0;
     background: none;
-    border-radius: 0.5 rem;
     appearance: none;
     cursor: pointer;
     font-family: $enFont;
@@ -16,7 +15,7 @@
     font-size: 13px;
     text-transform: uppercase;
     pointer-events: all;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     min-width: 10rem;
 
     &[disabled] {

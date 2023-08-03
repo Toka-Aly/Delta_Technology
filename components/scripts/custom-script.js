@@ -154,28 +154,37 @@ function closeMagnificPopup() {
 })();
 //Close Popup
 
-
-  // Dropdown Menu
-  initDropdowns();
-  function initDropdowns() {
-    $(".dropdown-toggle").each(function () {
-      const dropdownToggle = $(this);
-      const dropdownContainer = dropdownToggle.closest(".dropdown");
-      dropdownToggle.on("click", function () {
-        const target = dropdownToggle.attr("data-target");
-        if (target) {
-          _showDropdownMenuWithTarget(target);
-        }
-        _showDropdownMenu(dropdownContainer);
-      });
+// Dropdown Menu
+initDropdowns();
+function initDropdowns() {
+  $(".dropdown-toggle").each(function () {
+    const dropdownToggle = $(this);
+    const dropdownContainer = dropdownToggle.closest(".dropdown");
+    dropdownToggle.on("click", function () {
+      const target = dropdownToggle.attr("data-target");
+      if (target) {
+        _showDropdownMenuWithTarget(target);
+      }
+      _showDropdownMenu(dropdownContainer);
     });
-  }
+  });
+}
 
-  function _showDropdownMenu(dropdownContainer) {
-    if (dropdownContainer.hasClass("show")) {
-      dropdownContainer.removeClass("show");
-      return;
-    }
-    $(".dropdown").removeClass("show");
-    dropdownContainer.addClass("show");
+function _showDropdownMenu(dropdownContainer) {
+  if (dropdownContainer.hasClass("show")) {
+    dropdownContainer.removeClass("show");
+    return;
   }
+  $(".dropdown").removeClass("show");
+  dropdownContainer.addClass("show");
+}
+
+// general
+$("body").click(function (e) {
+  $(".dropdown").removeClass("show");
+});
+
+$(".dropdown").click(function (e) {
+  e.preventDefault();
+  e.stopPropagation();
+});

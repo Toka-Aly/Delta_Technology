@@ -31,7 +31,14 @@
 }
 
 .dropdown-toggle {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 1.5rem;
+    margin-inline-start: 0.8rem;
+  }
 }
 
 .dropdown-menu {
@@ -42,7 +49,7 @@
   min-width: 10rem;
   background-color: white;
   padding: 1rem;
-  border-radius: 1.4rem;
+  border-radius: 1rem;
   box-shadow: 0 0 15px rgba($color: #000000, $alpha: 0.2);
   z-index: 99;
 
