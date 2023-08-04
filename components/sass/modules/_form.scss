@@ -153,3 +153,83 @@ textarea {
         margin-left: 5px;
     }
 }
+
+.radio-check {
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    width: fit-content;
+
+    >div {
+        display: flex;
+        align-items: center;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    input[type="radio"] {
+        display: none;
+
+        &:checked+.check-mark {
+            border-color: $primaryColor;
+        }
+
+        &:checked+.check-mark:before {
+            transform: scale(1);
+        }
+    }
+
+    input[type="radio"][disabled] {
+        &~.check-mark {
+            background-color: $borderGrey;
+        }
+
+        &~i {
+            color: $borderGrey;
+        }
+    }
+
+    .check-mark {
+        width: 15px;
+        min-width: 15px;
+        height: 15px;
+        padding: 0;
+        border: solid 1px $borderGrey;
+        border-radius: 50%;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        &:before {
+            content: "";
+            height: 10px;
+            width: 10px;
+            padding-bottom: 1px;
+            padding-inline-start: 1px;
+            border-radius: 50%;
+            background-color: $primaryColor;
+            transform: scale(0);
+            transform-origin: center center;
+            transition: all 0.2s;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            border: 1px solid $primaryColor;
+        }
+    }
+
+    i {
+        margin-left: 1rem;
+        font-style: normal;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+
+.hint {
+    display: none;
+}

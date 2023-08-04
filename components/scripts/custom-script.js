@@ -188,3 +188,28 @@ $(".dropdown").click(function (e) {
   e.preventDefault();
   e.stopPropagation();
 });
+
+// field appears  depends on checked field
+$(".radio-check").on("click", function () {
+  $(".radio-check.checked").removeClass("checked");
+  $(this).addClass("checked");
+});
+let value = "lg";
+$('[name="option1"]').on("change", function () {
+  value = $(this).val();
+  if (value === "lg") {
+    $("#lg").slideDown(300);
+  } else {
+    $("#lg").slideUp(300);
+  }
+  if (value === "white-list") {
+    $("#white-list").slideDown(300);
+  } else {
+    $("#white-list").slideUp(300);
+  }
+  if (value === "cash") {
+    $("#cash").slideDown(300);
+  } else {
+    $("#cash").slideUp(300);
+  }
+});

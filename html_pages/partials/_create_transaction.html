@@ -1,7 +1,7 @@
 <main class="main">
   <div class="container container--has-sidebar">
     <aside class="sidebar">
-      <ul class="navbar">       
+      <ul class="navbar">
         <li>
           <a href="#" class="active"> انشاء معاملة جديدة </a>
           <ul class="sub-nav active">
@@ -13,340 +13,350 @@
             </li>
           </ul>
         </li>
-
+        <li>
+          <a href="#"> إدارة الضمان </a>
+        </li>
         <li>
           <a href="#"> المسودة </a>
         </li>
         <li>
-          <a href="#"> التقرير </a>
-        </li>
-        <li>
-          <a href="notifications.html"> التنبيهات </a>
+          <a href="#"> التقارير </a>
         </li>
       </ul>
     </aside>
     <div class="main__content">
       <div class="page-title">
-        <h1>
-          وارد سماح مؤقت
-        </h1>
+        <h1>وارد سماح مؤقت</h1>
+      </div>
+      <div class="page-heading">
+        <form action="" class="fields fields--grid">
+          <div class="fields__field">
+            <label for="" class="label"> رقم الشهادة </label>
+            <input type="text" class="custom-field" value="11000" />
+          </div>
+
+          <div class="fields__field">
+            <label for="" class="label"> تاريخ الطلب </label>
+            <input
+              type="text"
+              class="custom-field input-date"
+              placeholder="يوم-شهر-سنة"
+            />
+          </div>
+        </form>
       </div>
       <div class="accordions">
         <div class="accordion">
           <div class="accordion-section">
             <div class="title active">
-              <h3>الاقرار الجمركى</h3>
+              <h3>الضامن</h3>
             </div>
             <div class="content">
-              <div class="two-fields">
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label"> الجمرك</label>
-                    <select name="" id="" class="custom-select">
-                      <option value="">جمرك العامة</option>
-                      <option value="">الميناء الجاف</option>
-                    </select>
+              <div class="guarantee-list">
+                <div class="fields__field">
+                  <label class="radio-check checked">
+                    <div>
+                      <input type="radio" name="option1" value="lg" checked />
+                      <span class="check-mark"></span>
+                      <i> خطاب ضمان بنكي </i>
+                    </div>
+                  </label>
+                </div>
+                <div class="fields__field">
+                  <label class="radio-check">
+                    <div>
+                      <input type="radio" name="option1" value="white-list" />
+                      <span class="check-mark"></span>
+                      <i> تعهد شخصي</i>
+                    </div>
+                  </label>
+                </div>
+                <div class="fields__field">
+                  <label class="radio-check">
+                    <div>
+                      <input type="radio" name="option1" value="cash" />
+                      <span class="check-mark"></span>
+                      <i> نقدا</i>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div class="guarantee-list-fields">
+                <div class="guarantee-list-fields__content" id="lg">
+                  <form action="" class="fields fields--grid">
+                    <div class="fields__field">
+                      <label for="" class="label">
+                        الرقم النعريفي للضمان البنكي
+                      </label>
+                      <select name="" id="" class="custom-select">
+                        <option value="">59595q56</option>
+                        <option value="">1161q46564</option>
+                      </select>
+                    </div>
+                    <div class="fields__field">
+                      <label for="" class="label"> مبلغ </label>
+                      <input type="text" class="custom-field" />
+                    </div>
+                  </form>
+                  <div class="note">
+                    <ul>
+                      <li>
+                        <p>الرصيد الإجمالي <span> 5,000,000 </span></p>
+                      </li>
+                      <li>
+                        <p>المبلغ <span> 2000,000 </span></p>
+                      </li>
+                    </ul>
                   </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> المجمع </label>
-                    <select name="" id="" class="custom-select">
-                      <option value="">مدينة نصر</option>
-                      <option value="">اخري</option>
-                    </select>
+                </div>
+                <div class="guarantee-list-fields__content" id="white-list">
+                  <form action="" class="fields fields--grid">
+                    <div class="fields__field">
+                      <label for="" class="label">
+                        الرقم النعريفي للتعهد الشخصي
+                      </label>
+                      <select name="" id="" class="custom-select">
+                        <option value="">59595q56</option>
+                        <option value="">1161q46564</option>
+                      </select>
+                    </div>
+
+                    <div class="fields__field">
+                      <label for="" class="label"> مبلغ </label>
+                      <input type="text" class="custom-field" />
+                    </div>
+                  </form>
+                  <div class="note">
+                    <ul>
+                      <li>
+                        <p>الرصيد الإجمالي <span> 5,000,000 </span></p>
+                      </li>
+                      <li>
+                        <p>المبلغ <span> 2000,000 </span></p>
+                      </li>
+                    </ul>
                   </div>
-                </form>
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label"> رقم التسجيل </label>
-                    <input
-                      type="text"
-                      class="custom-field"
-                      placeholder="رقم التسجيل"
-                    />
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> التاريخ </label>
-                    <input
-                      type="text"
-                      class="custom-field input-date"
-                      placeholder="dd-mm-yy"
-                    />
-                  </div>
-                </form>
+                </div>
               </div>
             </div>
           </div>
           <div class="accordion-section">
             <div class="title">
-              <h3>الشركات</h3>
+              <h3>بيانات عامة</h3>
             </div>
             <div class="content">
-              <div class="two-fields">
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label"> القطاع</label>
-                    <select name="" id="" class="custom-select">
-                      <option value="">استثمار</option>
-                      <option value="">حكومي</option>
-                      <option value="">عام</option>
-                      <option value="">خاص</option>
-                    </select>
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> اسم المستورد </label>
-                    <select name="" id="" class="custom-select">
-                      <option value="">دلتا فابريك مصر</option>
-                      <option value="">اخري</option>
-                    </select>
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label">
-                      رقم البطاقه الاستيراديه
-                    </label>
-                    <input type="text" class="custom-field" value="55556666" />
-                  </div>
-                </form>
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label"> رقم السجل </label>
-                    <input
-                      type="text"
-                      class="custom-field"
-                      placeholder="123456"
-                    />
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> العنوان </label>
-                    <input
-                      type="text"
-                      class="custom-field"
-                      placeholder="دلتا فابريك مصر "
-                    />
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> رقم البطاقه الضريبيه</label>
-                    <input
-                      type="text"
-                      class="custom-field"
-                      placeholder="123456"
-                    />
-                  </div>
-                </form>
+              <form action="" class="fields fields--grid">
+                <div class="fields__field">
+                  <label for="" class="label"> الدائرة الجمركية </label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">جمرك العامة</option>
+                    <option value="">الميناء الجاف</option>
+                  </select>
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> جمرك القيد </label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">مدينة نصر</option>
+                    <option value="">اخري</option>
+                  </select>
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> رقم الافراج </label>
+                  <input
+                    type="number"
+                    class="custom-field"
+                    placeholder="رقم الافراج"
+                  />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> اسم المستورد </label>
+                  <input
+                    type="text"
+                    class="custom-field"
+                    value=" دلتا تكستايل شمال الصعيد للملابس الجاهزه"
+                    readonly
+                  />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> رقم متعامل المستورد </label>
+                  <input
+                    type="text"
+                    class="custom-field"
+                    value=" 205014909"
+                    readonly
+                  />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> قطاع المستورد </label>
+                  <input
+                    type="text"
+                    class="custom-field"
+                    value="  قطاع الاستثمار"
+                    readonly
+                  />
+                </div>
+
+                <div class="fields__field">
+                  <label for="" class="label"> تاريخ البيان </label>
+                  <input
+                    type="text"
+                    class="custom-field input-date"
+                    value="  تاريخ البيان"
+                  />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> مقدم البيان </label>
+                  <input type="text" class="custom-field" />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> رقم متعامل مقدم البيان </label>
+                  <input type="number" class="custom-field" />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> صفة مقدم البيان</label>
+                  <input type="text" class="custom-field" />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> كود الاعفاء </label>
+                  <input type="number" class="custom-field" />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> جمرك الوصول </label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">قرية البضائع القاهرة</option>
+                    <option value="">اخري</option>
+                  </select>
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> جمرك الافراج النهائي </label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">قرية البضائع القاهرة</option>
+                    <option value="">اخري</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="accordion-section">
+            <div class="title">
+              <h3>مانيفستو</h3>
+            </div>
+            <div class="content">
+              <form action="" class="fields fields--grid">
+                <div class="fields__field">
+                  <label for="" class="label"> رقم مانيفستو </label>
+                  <input
+                    type="number"
+                    class="custom-field"
+                    placeholder="xxxxx-xxxx"
+                  />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> وسيلة الشحن </label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">اخري</option>
+                  </select>
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label">ميناء الشحن</label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">مطار صبيحة غوكشن الدولي</option>
+                    <option value="">اخري</option>
+                  </select>
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label">ميناء الوصول </label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">القاهرة</option>
+                    <option value="">اخري</option>
+                  </select>
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> تاريخ الوصول </label>
+                  <input
+                    type="text"
+                    class="custom-field input-date"
+                    placeholder="dd-mm-yy"
+                  />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> التخزين </label>
+                  <input type="number" class="custom-field" />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> البوالص </label>
+                  <input type="number" class="custom-field" />
+                </div>
+              </form>
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead>
+                    <th>الحاوية</th>
+                    <th>بيان البضاعة\علامات و ارقام</th>
+                    <th>الطرود</th>
+                    <th>الوزن</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>Sticker label</td>
+                      <td>140 كيلو جرام</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
           <div class="accordion-section">
             <div class="title">
-              <h3>المستخلص</h3>
+              <h3>بيانات الفاتورة</h3>
             </div>
             <div class="content">
-              <div class="two-fields">
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label"> اسم مقدم الاقرار</label>
-                    <select name="" id="" class="custom-select">
-                      <option value="">المستخلص 1</option>
-                      <option value="">المستخلص 2</option>
-                      <option value="">المستخلص 3</option>
-                      <option value="">المستخلص 4</option>
-                    </select>
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> اسم المستورد </label>
-                    <select name="" id="" class="custom-select">
-                      <option value="">دلتا فابريك مصر</option>
-                      <option value="">اخري</option>
-                    </select>
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> رقم رخصة التخليص </label>
-                    <input type="text" class="custom-field" value="6666" />
-                  </div>
-                </form>
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label"> صفته </label>
-                    <input
-                      type="text"
-                      class="custom-field"
-                      placeholder="صفه1"
-                    />
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> رقم البطاقه الضريبيه </label>
-                    <input
-                      type="text"
-                      class="custom-field"
-                      placeholder=" 8899 "
-                    />
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> العنوان </label>
-                    <input
-                      type="text"
-                      class="custom-field"
-                      placeholder="عنوان المستخلص"
-                    />
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-section">
-            <div class="title">
-              <h3>البوليصة</h3>
-            </div>
-            <div class="content">
-              <div class="two-fields">
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label">الباخرة / الطائرة </label>
-                    <input type="text" class="custom-field" value="55556666" />
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> التاريخ </label>
-                    <input
-                      type="text"
-                      class="custom-field input-date"
-                      placeholder="dd-mm-yy"
-                    />
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> اسم المستورد </label>
-                    <select name="" id="" class="custom-select">
-                      <option value="">دلتا فابريك مصر</option>
-                      <option value="">اخري</option>
-                    </select>
-                  </div>
-                </form>
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label"> رقم البوليصة </label>
-                    <input
-                      type="text"
-                      class="custom-field"
-                      placeholder=" AB15194815181  "
-                    />
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label">بلد المشأ </label>
-                    <select name="" id="" class="custom-select">
-                      <option value="">مصر</option>
-                      <option value="">الصين</option>
-                    </select>
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> ميناء الشحن </label>
-                    <input type="text" class="custom-field" />
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-section">
-            <div class="title">
-              <h3>نوع التعاقد</h3>
-            </div>
-            <div class="content">
-              <div class="two-fields">
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label"> نوع التعاقد </label>
-                    <select name="" id="" class="custom-select">
-                      <option value="">CIF</option>
-                      <option value="">FOB</option>
-                      <option value="">EX-WORX</option>
-                      <option value="">C&F</option>
-                    </select>
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> نوع العملة </label>
-                    <select name="" id="" class="custom-select">
-                      <option value="">USD $</option>
-                      <option value="">جنية مصري LE</option>
-                    </select>
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> قيمة الفاتورة </label>
-                    <input type="text" class="custom-field" value="11000" />
-                  </div>
-                </form>
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label"> قيمة التأمين </label>
-                    <input type="text" class="custom-field" placeholder="" />
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> قيمة النولون </label>
-                    <input type="text" class="custom-field" />
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> قيمة التفريغ </label>
-                    <input
-                      type="text"
-                      class="custom-field"
-                      placeholder="123456"
-                    />
-                  </div>
-                </form>
-              </div>
-              <div class="two-fields">
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label"> رقم رخصة التخليص </label>
-                    <input type="text" class="custom-field" value="55556666" />
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> التاريخ </label>
-                    <input
-                      type="text"
-                      class="custom-field input-date"
-                      placeholder="dd-mm-yy"
-                    />
-                  </div>
-                </form>
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label"> رقم الاعتماد </label>
-                    <input type="text" class="custom-field" />
-                  </div>
-                  <div class="fields__field">
-                    <label for="" class="label"> قيمة الاعتماد</label>
-                    <input type="text" class="custom-field" />
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="accordion-section">
-            <div class="title">
-              <h3>طلبات صاحب الشأن</h3>
-            </div>
-            <div class="content">
-              <div class="two-fields">
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label"> طلبات صاحب الشأن</label>
-                    <textarea
-                      class="custom-textarea"
-                      name=""
-                      id=""
-                      cols="30"
-                      rows="10"
-                    ></textarea>
-                  </div>
-                </form>
-                <form action="" class="fields">
-                  <div class="fields__field">
-                    <label for="" class="label"> التاريخ </label>
-                    <input
-                      type="text"
-                      class="custom-field input-date"
-                      placeholder="dd-mm-yy"
-                    />
-                  </div>
-                </form>
-              </div>
+              <form action="" class="fields fields--grid">
+                <div class="fields__field">
+                  <label for="" class="label"> المورد </label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">Avery</option>
+                    <option value="">اخري</option>
+                  </select>
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> العملة </label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">دولار اميريكي</option>
+                    <option value="">جنية مصري</option>
+                  </select>
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> سعر التحويل </label>
+                  <input type="number" class="custom-field" />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> تاريخ التعريفة </label>
+                  <input type="text" class="custom-field input-date" />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> قيمة مقر عنها </label>
+                  <input type="number" class="custom-field" />
+                </div>
+
+                <div class="fields__field">
+                  <label for="" class="label"> نوع التعاقد  </label>
+                  <select name="" id="" class="custom-select">
+                    <option value="">Exfactory  </option>
+                    <option value="">اخري</option>
+                  </select>
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label"> م. تعاقد  </label>
+                  <input type="text" class="custom-field" />
+                </div>
+                <div class="fields__field">
+                  <label for="" class="label">القيمة النهائيه</label>
+                  <input type="text" class="custom-field" />
+                </div>
+              </form>
             </div>
           </div>
         </div>

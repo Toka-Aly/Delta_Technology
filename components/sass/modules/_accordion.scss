@@ -6,7 +6,7 @@
         .title {
             color: $primaryColor;
             background: rgba($color: $primaryColor, $alpha: 0.05);
-            border: 1px solid #bfbfbf;
+            border: 1px solid ;
             padding: 1.5rem 0;
             padding-left: 5rem;
             position: relative;
@@ -54,6 +54,9 @@
         .content {
             margin-top: 2rem;
         }
+    }
+    .table-wrapper{
+        margin-top: 2rem;
     }
 }
 

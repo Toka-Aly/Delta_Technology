@@ -7,19 +7,13 @@
     padding: 2rem 4rem;
 }
 
-.two-fields {
+.fields--grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     grid-gap: 2rem;
-    border-top: 0.1rem solid #eee;
-    padding-top: 2rem;
-    margin-top: 2rem;
-
-    &:first-child {
-        border-top: 0;
-        padding-top: 0;
-        margin-top: 0;
-    }
+    // border-top: 0.1rem solid #eee;
+    // padding-top: 2rem;
+    // margin-top: 2rem;
 }
 
 .actions {
@@ -93,9 +87,53 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 
     h1 {
         font-size: 2.2rem;
+    }
+}
+
+.page-heading {
+    margin-bottom: 2rem;
+}
+
+.guarantee-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.guarantee-list-fields__content{
+    display: none;
+    &:first-child{
+        display: block;
+    }
+}
+.note {
+    margin-top: 1.5rem;
+
+    ul {
+
+        li {
+            font-size: 15px;
+            font-weight: 100;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            background: url("/content/images/circle-exclamation-solid.svg");
+            background-size: 1.7rem;
+            background-repeat: no-repeat;
+            background-position: center left;
+            padding-inline-start: 2.8rem;
+        }
+
+        span {
+            font-weight: bold;
+
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
