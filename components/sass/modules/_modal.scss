@@ -17,7 +17,12 @@
   }
 
   .wrapper__content__body {
-    padding: 4rem 6rem;
+    padding: 4rem 2rem;
+
+    p {
+      text-align: center;
+      font-size: 1.5rem;
+    }
   }
 }
 

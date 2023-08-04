@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-margin-bottom: 1rem;
+  margin-bottom: 1rem;
+
   .container {
     display: flex;
     align-items: center;
@@ -12,4 +13,54 @@ margin-bottom: 1rem;
 
 .account {
   margin-inline-start: auto;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      border-left: 1px solid $borderGrey;
+      padding-inline-start: 10px;
+      margin-inline-start: 10px;
+
+      .notifi {
+        position: relative;
+
+        figure {
+          display: flex;
+          align-items: center;
+          width: 1.5rem;
+          height: 1.5rem;
+
+          img {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+
+        span {
+          color: white;
+          font-size: 11px;
+          width: 12px;
+          height: 12px;
+          min-width: 12px;
+          border-radius: 50%;
+          border: 1.5px solid white;
+          background-color: #63a744;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: -7px;
+          right: -4px;
+        }
+      }
+
+      &:first-child {
+        border: 0;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
 }

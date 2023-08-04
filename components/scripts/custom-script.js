@@ -213,3 +213,6 @@ $('[name="option1"]').on("change", function () {
     $("#cash").slideUp(300);
   }
 });
+
+
+
