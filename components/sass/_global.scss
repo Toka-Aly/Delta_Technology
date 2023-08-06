@@ -39,17 +39,17 @@ body {
   }
 
   // Scrollbar styles
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
 
-  &::-webkit-scrollbar-thumb {
-    display: none;
-  }
+  // &::-webkit-scrollbar-thumb {
+  //   display: none;
+  // }
 
-  &:hover::-webkit-scrollbar-thumb {
-    display: none;
-  }
+  // &:hover::-webkit-scrollbar-thumb {
+  //   display: none;
+  // }
 
 
 }
@@ -60,4 +60,8 @@ body {
   margin-right: auto;
   width: 100%;
   padding: 0 3rem;
+}
+
+.main{
+  padding-bottom: 2rem
 }

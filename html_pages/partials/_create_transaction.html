@@ -2,37 +2,32 @@
   <div class="container container--has-sidebar">
     <aside class="sidebar">
       <ul class="navbar">
-        <li>
-          <a href="#" class="active"> انشاء معاملة جديدة </a>
+        <li class="list">
+          <a href="#" class="active"> انشاء صادر </a>
           <ul class="sub-nav active">
             <li>
-              <a href="#" class="selected"> انشاء صادر </a>
-              <ul class="nested-list">
-                <li>
-                  <a href="#"> انشاء جديد </a>
-                </li>
-                <li>
-                  <a href="#"> الارشيف </a>
-                </li>
-              </ul>
+              <a href="#" class="selected"> انشاء جديد </a>
             </li>
             <li>
-              <a href="#"> انشاء وارد </a>
-              <ul class="nested-list" style="display: none;">
-                <li>
-                  <a href="#"> انشاء جديد </a>
-                </li>
-                <li>
-                  <a href="#"> الارشيف </a>
-                </li>
-                <li>
-                  <a href="#"> التسويات </a>
-                </li>
-              </ul>
+              <a href="archive.html"> الارشيف </a>
             </li>
           </ul>
         </li>
-        <li>
+        <li class="list">
+          <a href="#"> انشاء وارد </a>
+          <ul class="sub-nav">
+            <li>
+              <a href="#"> انشاء جديد </a>
+            </li>
+            <li>
+              <a href="archive.html"> الارشيف </a>
+            </li>
+            <li>
+              <a href="#"> التسويات </a>
+            </li>
+          </ul>
+        </li>
+        <li class="list">
           <a href="#"> إدارة الضامن </a>
           <ul class="sub-nav">
             <li>
@@ -46,27 +41,35 @@
             </li>
           </ul>
         </li>
-        <li>
-          <a href="#"> المسودة  </a>
+        <li class="list">
+          <a href="#"> المسودة </a>
           <ul class="sub-nav">
             <li>
-              <a href="#"> المسودة 1   </a>
+              <a href="#"> المسودة 1 </a>
             </li>
             <li>
-              <a href="#"> المسودة 2   </a>
+              <a href="#"> المسودة 2 </a>
             </li>
             <li>
-              <a href="#"> الكل  </a>
+              <a href="#"> الكل </a>
             </li>
           </ul>
         </li>
-        <li>
+        <li class="list">
           <a href="#"> التقارير </a>
+          <ul class="sub-nav">
+            <li>
+              <a href="#"> قائمة المعاملات </a>
+            </li>
+            <li>
+              <a href="#"> تقرير الشهادات </a>
+            </li>
+            <li>
+              <a href="#"> الكل </a>
+            </li>
+          </ul>
         </li>
-        <li>
-          <a href="#"> وحدة الإدارة </a>
-        </li>
-        <li>
+        <li class="list">
           <a href="#"> إدارة الحساب </a>
           <ul class="sub-nav">
             <li>
@@ -77,11 +80,14 @@
             </li>
           </ul>
         </li>
+            <li>
+          <a href="#"> وحدة الإدارة </a>
+        </li>
         <li>
           <a href="notifications.html"> تنبيهات </a>
         </li>
         <li class="centered">
-          <a href="#"> تسجيل دخول </a>
+          <a href="#"> تسجيل خروج </a>
         </li>
       </ul>
     </aside>
@@ -109,7 +115,7 @@
       <div class="accordions">
         <div class="accordion">
           <div class="accordion-section">
-            <div class="title">
+            <div class="title active">
               <h3>الضامن</h3>
             </div>
             <div class="content">
@@ -330,7 +336,6 @@
                     class="custom-field"
                     placeholder="xxxxx-xxxx"
                   />
-                  <p class="required-note">* Required field</p>
                 </div>
                 <div class="fields__field">
                   <label for="" class="label"> وسيلة الشحن </label>
