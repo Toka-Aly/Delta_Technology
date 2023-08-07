@@ -5,6 +5,7 @@
 .main__content {
     flex: 1;
     padding: 0 4rem 2rem;
+    max-width: 75%;
 }
 
 .fields--grid {
@@ -28,6 +29,15 @@
         &:last-child {
             margin: 0;
         }
+    }
+
+    .left-actions,
+    .right-actions {
+        display: flex;
+        align-items: center;
+    }
+    .left-actions{
+        margin-inline-start: auto;
     }
 }
 
@@ -79,9 +89,11 @@
     .logo {
         margin-bottom: 2rem;
     }
-    .fields__field{
+
+    .fields__field {
         margin-bottom: 1.5rem;
-        &:last-child{
+
+        &:last-child {
             margin-bottom: 0;
         }
     }
@@ -92,6 +104,7 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 1.5rem;
+
     h1 {
         font-size: 2.2rem;
     }
@@ -107,12 +120,15 @@
     justify-content: space-around;
     margin-bottom: 2rem;
 }
-.guarantee-list-fields__content{
+
+.guarantee-list-fields__content {
     display: none;
-    &:first-child{
+
+    &:first-child {
         display: block;
     }
 }
+
 .note {
     margin-top: 1.5rem;
 

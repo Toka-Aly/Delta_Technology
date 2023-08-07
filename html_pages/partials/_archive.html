@@ -95,6 +95,17 @@
       <div class="page-title">
         <h1>الارشيف  </h1>
       </div>
+      <div class="seach-form">
+        <form action="" class="fields">
+          <div class="fields__field">
+            <label for="" class="label"> رقم الشهادة </label>
+            <input type="text" class="custom-field" value="11000" required/>
+          </div>
+          <button class="btn-primary">
+            بحث
+          </button>
+        </form>
+      </div>
       <div class="page-heading">
         <form action="" class="fields fields--grid">
           <div class="fields__field">
@@ -193,6 +204,36 @@
                       </select>
                     </div>
 
+                    <div class="fields__field">
+                      <label for="" class="label"> مبلغ </label>
+                      <input
+                        type="number"
+                        class="custom-field"
+                        id="input-amount"
+                      />
+                    </div>
+                  </form>
+                  <div class="note">
+                    <ul>
+                      <li>
+                        <p>الرصيد الإجمالي <span> 5,000,000 </span></p>
+                      </li>
+                      <li>
+                        <p>المبلغ <span> 2000,000 </span></p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="guarantee-list-fields__content" id="cash">
+                  <form action="" class="fields fields--grid">
+                    <div class="fields__field">
+                      <label for="" class="label"> التعليق </label>
+                      <input
+                        type="number"
+                        class="custom-field"
+                        id="input-amount"
+                      />
+                    </div>
                     <div class="fields__field">
                       <label for="" class="label"> مبلغ </label>
                       <input
@@ -375,6 +416,9 @@
                   <input type="number" class="custom-field" />
                 </div>
               </form>
+              <div class="table-title">
+                <h2>لطرود و وصف البضاعة</h2>
+              </div>
               <div class="table-wrapper">
                 <table class="table">
                   <thead>
@@ -385,10 +429,28 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td></td>
-                      <td></td>
-                      <td>Sticker label</td>
-                      <td>140 كيلو جرام</td>
+                      <td>
+                        <select name="" id="" class="custom-select">
+                          <option value="">1</option>
+                          <option value="">2</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select name="" id="" class="custom-select">
+                          <option value="">59595q56</option>
+                          <option value="">1161q46564</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select name="" id="" class="custom-select">
+                          <option value="">1</option>
+                          <option value="">155</option>
+                        </select>
+                      </td>
+                      <td>
+                        <input type="number" class="custom-field" />
+
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -427,7 +489,10 @@
                   <label for="" class="label"> قيمة مقر عنها </label>
                   <input type="number" class="custom-field" />
                 </div>
-
+                <div class="fields__field">
+                  <label for="" class="label"> قيمة الفاتورة </label>
+                  <input type="number" class="custom-field" />
+                </div>
                 <div class="fields__field">
                   <label for="" class="label"> نوع التعاقد </label>
                   <select name="" id="" class="custom-select">
@@ -461,17 +526,61 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>48219000000</td>
-                      <td>2.000%</td>
-                      <td>196000 عدد</td>
-                      <td>140 كجم صافي</td>
-                      <td>15151</td>
-                      <td></td>
-                      <td></td>
-                      <td>صناعي</td>
-                      <td></td>
-                      <td>تركيا</td>
-                      <td>النظام</td>
+                      <td>
+                        <input
+                          type="number"
+                          class="custom-field"
+                          value="48219000000"
+                        />
+                      </td>
+                      <td>
+                        <input
+                          type="number"
+                          class="custom-field"
+                          value="2.000"
+                        />
+                      </td>
+                      <td>
+                        <input type="number" class="custom-field" />
+                      </td>
+                      <td>
+                        <input type="number" class="custom-field" />
+                      </td>
+                      <td>
+                        <input type="number" class="custom-field" value="140" />
+                      </td>
+                      <td>
+                        <input type="number" class="custom-field" />
+                      </td>
+                      <td>
+                        <input type="number" class="custom-field" />
+                      </td>
+                      <td>
+                        <input
+                          type="text"
+                          class="custom-field"
+                          value="صناعي "
+                          readonly
+                        />
+                      </td>
+                      <td>
+                        <select name="" id="" class="custom-select">
+                          <option value="">59595q56</option>
+                          <option value="">1161q46564</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select name="" id="" class="custom-select">
+                          <option value="">Egypt</option>
+                          <option value="">Uk</option>
+                        </select>
+                      </td>
+                      <td>
+                        <select name="" id="" class="custom-select">
+                          <option value="">59595q56</option>
+                          <option value="">1161q46564</option>
+                        </select>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -480,21 +589,94 @@
           </div>
           <div class="accordion-section">
             <div class="title">
-              <h3>قائمة بالشحن</h3>
+              <h3>الضرائب والرسوم</h3>
             </div>
-            <div class="content"></div>
+            <div class="content">
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead>
+                    <th></th>
+                    <th>ضريبة الوارد</th>
+                    <th>ضريبة قيمة متضقفة</th>
+                    <th>رسم اغراق علي</th>
+                    <th>ضريبة ا.ت.ص</th>
+                    <th>رسوم اخري</th>
+                    <th>هيئة رسم</th>
+                    <th>رسوم الهيئة</th>
+                  </thead>
+                  <tbody></tbody>
+                  <tbody>
+                    <tr>
+                      <td>اجمالي</td>
+                      <td>
+                        <input
+                          type="number"
+                          class="custom-field"
+                          value="2.000"
+                        />
+                      </td>
+                      <td>
+                        <input type="number" class="custom-field" />
+                      </td>
+                      <td>
+                        <input type="number" class="custom-field" />
+                      </td>
+
+                      <td>
+                        <input type="number" class="custom-field" />
+                      </td>
+                      <td>
+                        <input type="number" class="custom-field" />
+                      </td>
+                      <td>
+                        <input type="number" class="custom-field" />
+                      </td>
+                      <td>
+                        <input type="number" class="custom-field" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-section">
+            <div class="title">
+              <h3>قائمة الشحن</h3>
+            </div>
+            <div class="content">
+              <div class="fields__field">
+                <label for="" class="label"> تحميل مستند قائمة الشحن </label>
+                <input
+                  type="file"
+                  data-multiple-caption="{count} files selected"
+                  multiple=""
+                  class="input-upload"
+                />
+                <span>تحميل</span>
+              </div>
+            </div>
           </div>
           <div class="accordion-section">
             <div class="title">
               <h3>البوليصة</h3>
             </div>
-            <div class="content"></div>
+            <div class="content">
+              <div class="fields__field">
+                <label for="" class="label"> تحميل سند البوليصة </label>
+                <input
+                  type="file"
+                  data-multiple-caption="{count} files selected"
+                  multiple=""
+                  class="input-upload"
+                />
+                <span>تحميل</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="actions">
-        <a href="successful-message.html" class="btn-primary"> انشاء قرار </a>
-      </div>
+ 
     </div>
   </div>
 </main>

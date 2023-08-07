@@ -2,14 +2,13 @@
   width: 100%;
   border-collapse: collapse;
 
+
   td,
   th {
     border: 1px solid #ececed;
     padding: 0.8rem;
     white-space: nowrap;
     text-align: center;
-    width: 5%;  display: table-cell;
-
   }
 
   th {
@@ -17,6 +16,12 @@
     text-align: center;
     font-weight: 700;
 
+  }
+
+  .custom-select,
+  .custom-field {
+    border: 0;
+    min-width: 10rem;
   }
 
   td {
@@ -41,4 +46,21 @@
 
 .table-wrapper {
   margin: 0;
+  overflow: auto;
+
+  // Scrollbar styles
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    -webkit-transition: 0.3s background;
+    transition: 0.3s background;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #ced4da;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background: #adb5bd;
+  }
 }

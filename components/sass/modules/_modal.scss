@@ -5,6 +5,8 @@
   max-width: 40rem;
   width: 100%;
   margin: auto;
+  min-width: 40rem;
+  text-align: center;
 
   .message-view {
     height: auto;
@@ -41,4 +43,10 @@
 
 .mfp-close {
   display: none !important;
+}
+
+.wrapper__content__footer {
+  .actions {
+    justify-content: center;
+  }
 }

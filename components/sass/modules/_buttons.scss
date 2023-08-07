@@ -6,7 +6,7 @@
     cursor: pointer;
     font-family: $enFont;
     transition: 0.3s;
-    height: 3.8rem;
+    height: 4.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
     text-transform: uppercase;
     pointer-events: all;
     border-radius: 1rem;
-    min-width: 10rem;
+    // min-width: 10rem;
 
     &[disabled] {
         pointer-events: none;
@@ -46,4 +46,10 @@
 
 .btn-link {
     @extend %btn;
+}
+
+.btn-outline {
+    @extend %btn;
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
 }

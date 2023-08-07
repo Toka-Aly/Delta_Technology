@@ -14,6 +14,8 @@ $(document).ready(function () {
       $(".input-date").datepicker({
         showAnim: "slideDown",
         dateFormat: "dd-mm-yy",
+        changeMonth: true,
+        changeYear: true,
       });
     }
   })();

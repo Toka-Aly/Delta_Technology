@@ -1,0 +1,31 @@
+.ui-datepicker-month {
+    padding: 0.5rem;
+}
+
+.ui-widget-content .ui-icon {
+    background: url("/content/images/chevron-left-solid.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ui-datepicker .ui-datepicker-prev span {
+    transform: rotate(180deg);
+
+}
+
+.ui-widget-header .ui-state-hover {
+    position: absolute;
+    top: 2px;
+    width: 1.8em;
+    height: 1.8em;
+    right: 2px;
+    background-color: transparent;
+    border: 0;
+}

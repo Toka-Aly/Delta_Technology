@@ -236,3 +236,15 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+.seach-form{
+    margin-bottom: 2rem;
+    .fields{
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        
+        .btn-primary{
+         margin-inline-start: 1rem;
+        }
+    }
+}
