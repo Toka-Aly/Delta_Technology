@@ -216,5 +216,10 @@ $('[name="option1"]').on("change", function () {
   }
 });
 
-
-
+(function () {
+  if ($(".alert").length) {
+    $(".alert .close-btn ").click(function () {
+      $(this).closest(".alert").slideUp(150);
+    });
+  }
+})();

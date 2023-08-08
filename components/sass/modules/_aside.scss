@@ -9,61 +9,52 @@
     .fields {
         margin-top: 4rem;
     }
-}
 
-.navbar {
-    width: 100%;
+    .navbar {
+        width: 100%;
 
-    li {
-        a {
-            font-size: 1.7rem;
-            color: #333;
-            display: flex;
-            align-items: center;
-            padding: 1rem;
-            background-color: transparent;
-            transition: all .3s;
-       
+        li {
+            a {
+                font-size: 1.7rem;
+                color: #333;
+                display: flex;
+                align-items: center;
+                padding: 1rem;
+                background-color: transparent;
+                transition: all .3s;
+            }
 
-            &.active {
-                // background-color: #727476;
-                // color: white;
-                // background-image: url("/content/images/chevron-down-solid-white.svg");
+        }
 
+        .dropdown-list {
+            >a {
+                background-position: center right 1.5rem;
+                background-size: 1.5rem;
+                background-repeat: no-repeat;
+                background-image: url("/content/images/chevron-down-solid.svg");
+
+
+            }
+
+            &.open {
                 .sub-nav {
                     display: block;
-                }
 
-                &:first-child {
-                    border-radius: 1rem 1rem 0 0;
-
+                    a {
+                        &.selected {
+                            color: $primaryColor;
+                        }
+                    }
                 }
             }
-        }
-        &.list{
-            background-position: center right 1.5rem;
-            background-size: 1.5rem;
-            background-repeat: no-repeat;
-            background-image: url("/content/images/chevron-down-solid.svg");
 
         }
-    }
 
-    .sub-nav {
-        padding-inline-start: 1.5rem;
-        // display: none;
-        background-color: #e5e5e6;
+        .sub-nav {
+            padding-inline-start: 1.5rem;
+            background-color: #e5e5e6;
+            display: none;
 
-        &.active {
-            display: block;
-        }
-
-        a {
-            background-image: none;
-
-            &.selected {
-                color: $primaryColor;
-            }
         }
     }
 }

@@ -2,18 +2,18 @@
   <div class="container container--has-sidebar">
     <aside class="sidebar">
       <ul class="navbar">
-        <li class="list active">
+        <li class="dropdown-list open">
           <a href="#"> انشاء صادر </a>
           <ul class="sub-nav">
             <li>
-              <a href="#"> انشاء جديد </a>
+              <a href="#" > انشاء جديد </a>
             </li>
             <li>
-              <a href="archive.html"> الارشيف </a>
+              <a href="archive.html" class="selected"> الارشيف </a>
             </li>
           </ul>
         </li>
-        <li class="list">
+        <li class="dropdown-list">
           <a href="#"> انشاء وارد </a>
           <ul class="sub-nav">
             <li>
@@ -27,7 +27,7 @@
             </li>
           </ul>
         </li>
-        <li class="list">
+        <li class="dropdown-list">
           <a href="#"> إدارة الضامن </a>
           <ul class="sub-nav">
             <li>
@@ -41,7 +41,7 @@
             </li>
           </ul>
         </li>
-        <li class="list">
+        <li class="dropdown-list">
           <a href="#"> المسودة </a>
           <ul class="sub-nav">
             <li>
@@ -55,7 +55,7 @@
             </li>
           </ul>
         </li>
-        <li class="list">
+        <li class="dropdown-list">
           <a href="#"> التقارير </a>
           <ul class="sub-nav">
             <li>
@@ -69,7 +69,7 @@
             </li>
           </ul>
         </li>
-        <li class="list">
+        <li class="dropdown-list">
           <a href="#"> إدارة الحساب </a>
           <ul class="sub-nav">
             <li>
@@ -80,7 +80,7 @@
             </li>
           </ul>
         </li>
-            <li>
+        <li>
           <a href="#"> وحدة الإدارة </a>
         </li>
         <li>
@@ -93,30 +93,18 @@
     </aside>
     <div class="main__content">
       <div class="page-title">
-        <h1>الارشيف  </h1>
-      </div>
-      <div class="seach-form">
-        <form action="" class="fields">
-          <div class="fields__field">
-            <label for="" class="label"> رقم الشهادة </label>
-            <input type="text" class="custom-field" value="11000" required/>
-          </div>
-          <button class="btn-primary">
-            بحث
-          </button>
-        </form>
+        <h1>وارد سماح مؤقت</h1>
       </div>
       <div class="page-heading">
         <form action="" class="fields fields--grid">
           <div class="fields__field">
-            <label for="" class="label"> رقم الشهادة </label>
-            <input type="text" class="custom-field" value="11000" required/>
-            <p class="required-note">* Required field</p>
+            <label for="" class="label"> رقم الشهادة *</label>
+            <input type="text" class="custom-field" value="11000" />
           </div>
 
           <div class="fields__field">
-            <label for="" class="label"> تاريخ الطلب </label>
-            <input required
+            <label for="" class="label"> تاريخ الطلب *</label>
+            <input
               type="text"
               class="custom-field input-date"
               placeholder="يوم-شهر-سنة"
@@ -191,6 +179,33 @@
                       </li>
                     </ul>
                   </div>
+                   <div class="fields__field">
+                  <label class="radio-check">
+                    <div>
+                      <input type="radio" name="option2"  />
+                      <span class="check-mark"></span>
+                      <i> نقدا</i>
+                    </div>
+                  </label>
+                </div>
+                  <form action="" class="fields fields--grid">
+                    <div class="fields__field">
+                      <label for="" class="label"> التعليق </label>
+                      <input
+                        type="number"
+                        class="custom-field"
+                        id="input-amount"
+                      />
+                    </div>
+                    <div class="fields__field">
+                      <label for="" class="label"> مبلغ </label>
+                      <input
+                        type="number"
+                        class="custom-field"
+                        id="input-amount"
+                      />
+                    </div>
+                  </form>
                 </div>
                 <div class="guarantee-list-fields__content" id="white-list">
                   <form action="" class="fields fields--grid">
@@ -223,6 +238,24 @@
                       </li>
                     </ul>
                   </div>
+                  <form action="" class="fields fields--grid">
+                    <div class="fields__field">
+                      <label for="" class="label"> التعليق </label>
+                      <input
+                        type="number"
+                        class="custom-field"
+                        id="input-amount"
+                      />
+                    </div>
+                    <div class="fields__field">
+                      <label for="" class="label"> مبلغ </label>
+                      <input
+                        type="number"
+                        class="custom-field"
+                        id="input-amount"
+                      />
+                    </div>
+                  </form>
                 </div>
                 <div class="guarantee-list-fields__content" id="cash">
                   <form action="" class="fields fields--grid">
@@ -449,7 +482,6 @@
                       </td>
                       <td>
                         <input type="number" class="custom-field" />
-
                       </td>
                     </tr>
                   </tbody>
@@ -600,6 +632,8 @@
                     <th>ضريبة قيمة متضقفة</th>
                     <th>رسم اغراق علي</th>
                     <th>ضريبة ا.ت.ص</th>
+                    <th>رسوم معفاة</th>
+                    <th>هيئة - رسم فحص</th>
                     <th>رسوم اخري</th>
                     <th>هيئة رسم</th>
                     <th>رسوم الهيئة</th>
@@ -676,13 +710,28 @@
           </div>
         </div>
       </div>
- 
+      <div class="actions">
+        <div class="right-actions">
+          <button class="btn-primary">حذف</button>
+        </div>
+        <div class="left-actions">
+          <a
+            href="successful-message.html"
+            class="btn-primary"
+            data-type="modal"
+            data-target="creation-failed"
+          >
+            انشاء قرار
+          </a>
+          <a href="draft.html" class="btn-primary"> اضف للمسودة </a>
+        </div>
+      </div>
     </div>
   </div>
 </main>
 
 <div
-  id="saved-popup"
+  id="alert-popup"
   class="mfp-with-anim mfp-hide normal-popup left-popup medium-popup no-padding"
   data-effect="mfp-zoom-in"
 >
@@ -692,12 +741,43 @@
         <button class="close-popup">X</button>
       </div>
       <div class="wrapper__content__body">
-        <div class="message-view">
-          <div class="message-veiw__container">
-            <p>تم حفظ اقرار بنجاح</p>
-          </div>
+        <figure class="modal-logo">
+          <img src="content/alert-svgrepo-com.svg" alt="" />
+        </figure>
+        <p>
+          لا يمكن تغطية هذا المبلغ بهذا الضمان البنكي . يرجى اختيار خطاب ضمان
+          بنكي أخرى أو إدخال مبلغ آخر
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div
+  id="creation-failed"
+  class="mfp-with-anim mfp-hide normal-popup left-popup medium-popup no-padding"
+  data-effect="mfp-zoom-in"
+>
+  <div class="wrapper">
+    <div class="wrapper__content">
+      <div class="wrapper__content__header">
+        <h2>A Failure Occured</h2>
+      </div>
+      <div class="wrapper__content__body">
+        <p>Failed to be created</p>
+      </div>
+      <div class="wrapper__content__footer">
+        <div class="actions">
+          <button class="btn-primary">Create</button>
+          <button class="btn-outline">Close</button>
         </div>
       </div>
     </div>
   </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $("#input-amount").on("change", function () {
+    openMagnificPopup(`#alert-popup`, false, `#alert-popup`);
+  });
+</script>

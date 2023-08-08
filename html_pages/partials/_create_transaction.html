@@ -2,9 +2,9 @@
   <div class="container container--has-sidebar">
     <aside class="sidebar">
       <ul class="navbar">
-        <li class="list">
-          <a href="#" class="active"> انشاء صادر </a>
-          <ul class="sub-nav active">
+        <li class="dropdown-list open">
+          <a href="#"> انشاء صادر </a>
+          <ul class="sub-nav">
             <li>
               <a href="#" class="selected"> انشاء جديد </a>
             </li>
@@ -13,7 +13,7 @@
             </li>
           </ul>
         </li>
-        <li class="list">
+        <li class="dropdown-list">
           <a href="#"> انشاء وارد </a>
           <ul class="sub-nav">
             <li>
@@ -27,7 +27,7 @@
             </li>
           </ul>
         </li>
-        <li class="list">
+        <li class="dropdown-list">
           <a href="#"> إدارة الضامن </a>
           <ul class="sub-nav">
             <li>
@@ -41,7 +41,7 @@
             </li>
           </ul>
         </li>
-        <li class="list">
+        <li class="dropdown-list">
           <a href="#"> المسودة </a>
           <ul class="sub-nav">
             <li>
@@ -55,7 +55,7 @@
             </li>
           </ul>
         </li>
-        <li class="list">
+        <li class="dropdown-list">
           <a href="#"> التقارير </a>
           <ul class="sub-nav">
             <li>
@@ -69,7 +69,7 @@
             </li>
           </ul>
         </li>
-        <li class="list">
+        <li class="dropdown-list">
           <a href="#"> إدارة الحساب </a>
           <ul class="sub-nav">
             <li>
@@ -98,12 +98,12 @@
       <div class="page-heading">
         <form action="" class="fields fields--grid">
           <div class="fields__field">
-            <label for="" class="label"> رقم الشهادة </label>
+            <label for="" class="label"> رقم الشهادة *</label>
             <input type="text" class="custom-field" value="11000" />
           </div>
 
           <div class="fields__field">
-            <label for="" class="label"> تاريخ الطلب </label>
+            <label for="" class="label"> تاريخ الطلب *</label>
             <input
               type="text"
               class="custom-field input-date"
@@ -587,6 +587,8 @@
                     <th>ضريبة قيمة متضقفة</th>
                     <th>رسم اغراق علي</th>
                     <th>ضريبة ا.ت.ص</th>
+                    <th>رسوم معفاة</th>
+                    <th>هيئة - رسم فحص</th>
                     <th>رسوم اخري</th>
                     <th>هيئة رسم</th>
                     <th>رسوم الهيئة</th>
@@ -642,6 +644,13 @@
                 />
                 <span>تحميل</span>
               </div>
+              <div class="alert alert--success" style="display: block">
+                <div class="alert__content">
+                  <p>Uploaded Successfully</p>
+
+                  <button class="btn-link close-btn">X</button>
+                </div>
+              </div>
             </div>
           </div>
           <div class="accordion-section">
@@ -658,6 +667,12 @@
                   class="input-upload"
                 />
                 <span>تحميل</span>
+              </div>
+              <div class="alert alert--error" style="display: block">
+                <div class="alert__content">
+                  <p>Failed to upload. The document size is to large.</p>
+                  <button class="btn-link close-btn">X</button>
+                </div>
               </div>
             </div>
           </div>
@@ -685,11 +700,11 @@
 
 <div
   id="alert-popup"
-  class="mfp-with-anim mfp-hide normal-popup left-popup medium-popup no-padding"
+  class="mfp-with-anim mfp-hide normal-popup"
   data-effect="mfp-zoom-in"
 >
   <div class="wrapper">
-    <div class="wrapper__content wrapper__content--edit-profile">
+    <div class="wrapper__content wrapper__content--alert">
       <div class="wrapper__content__header">
         <button class="close-popup">X</button>
       </div>
@@ -708,7 +723,7 @@
 
 <div
   id="creation-failed"
-  class="mfp-with-anim mfp-hide normal-popup left-popup medium-popup no-padding"
+  class="mfp-with-anim mfp-hide normal-popup"
   data-effect="mfp-zoom-in"
 >
   <div class="wrapper">
@@ -717,18 +732,37 @@
         <h2>A Failure Occured</h2>
       </div>
       <div class="wrapper__content__body">
+        <p>Failed to be created</p>
+      </div>
+      <div class="wrapper__content__footer">
+        <div class="actions">
+          <button class="btn-primary">Create</button>
+          <button class="btn-outline close-popup">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  id="creation-success"
+  class="mfp-with-anim mfp-hide normal-popup"
+  data-effect="mfp-zoom-in"
+>
+  <div class="wrapper">
+    <div class="wrapper__content">
+      <div class="wrapper__content__header">
+        <h2>Creation Done</h2>
+      </div>
+      <div class="wrapper__content__body">
         <p>
-        Failed to be created
+          Import Transaction created successfully by Certificate NO. 56956 and
+          Binding ID 8719
         </p>
       </div>
       <div class="wrapper__content__footer">
         <div class="actions">
-          <button class="btn-primary">
-            Create
-          </button>
-          <button class="btn-outline">
-            Close
-          </button>
+          <button class="btn-primary">Draft</button>
+          <button class="btn-outline close-popup">Close</button>
         </div>
       </div>
     </div>
