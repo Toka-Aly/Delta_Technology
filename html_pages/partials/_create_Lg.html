@@ -6,7 +6,7 @@
           <a href="create_transaction.html"> انشاء صادر </a>
           <ul class="sub-nav">
             <li>
-              <a href="create_transaction.html" > انشاء جديد </a>
+              <a href="create_transaction.html"> انشاء جديد </a>
             </li>
             <li>
               <a href="archive.html"> الارشيف </a>
@@ -27,7 +27,7 @@
             </li>
           </ul>
         </li>
-        <li class="dropdown-list">
+        <li class="dropdown-list open">
           <a href="create_Lg.html"> إدارة الضامن </a>
           <ul class="sub-nav">
             <li>
@@ -84,7 +84,7 @@
           <a href="#"> وحدة الإدارة </a>
         </li>
         <li>
-          <a href="notifications.html" class="selected"> تنبيهات </a>
+          <a href="notifications.html"> تنبيهات </a>
         </li>
         <li class="centered">
           <a href="#"> تسجيل خروج </a>
@@ -92,89 +92,84 @@
       </ul>
     </aside>
     <div class="main__content">
-      <div class="table-containers">
-        <div class="table-title">
-          <h2>تنبيهات الحركة و التخليص</h2>
+      <div class="page-title">
+        <h1>إنشاء خطاب ضمان بنكي</h1>
+      </div>
+      <form action="" class="fields fields--grid">
+        <div class="fields__field">
+          <label for="" class="label"> الرقم النعريفي للضمان البنكي *</label>
+          <input type="number" class="custom-field" />
         </div>
-        <div class="table-wrapper">
-          <table class="table">
-            <thead>
-              <th colspan="3">لا يوجد</th>
-            </thead>
-          </table>
+        <div class="fields__field">
+          <label for="" class="label"> مبلغ *</label>
+          <input type="number" class="custom-field" id="input-amount" />
         </div>
-        <div class="table-title">
-          <h2>تنبيهات العينات</h2>
+        <div class="fields__field">
+          <label for="" class="label"> تاريخ الإصدار *</label>
+          <input
+            type="text"
+            class="custom-field input-date"
+            placeholder="23-05-2012"
+          />
         </div>
-        <div class="table-wrapper">
-          <table class="table">
-            <thead>
-              <th>رقم الاقرار</th>
-              <th>التنبيه</th>
-              <th>درجة الخطورة</th>
-              <th> التاريخ </th>
-              <th> الوقت </th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>تشغيل لدى الغير 1</td>
-                <td>
-                  تم استلام خطاب رفض العينه و لم يسجل بالنظام ارسال العينة
-                  الثانية
-                </td>
-                <td>خطير جدا</td>
-                <td>
-                  20/08/2023
-                </td>
-                <td>
-                  10:00
-                </td>
-              </tr>
-              <tr>
-                <td>تشغيل لدى الغير 2</td>
-                <td>باقي على فترة التشغيل 2 اسبوع</td>
-                <td>متوسط</td>
-                <td>
-                  20/08/2023
-                </td>
-                <td>
-                  10:00
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="fields__field">
+          <label for="" class="label"> تاريخ استحقاق *</label>
+          <input
+            type="text"
+            class="custom-field input-date"
+            placeholder="23-05-2012"
+          />
         </div>
-        <div class="table-title">
-          <h2>تنبيهات الضمانات</h2>
+        <div class="fields__field">
+          <label for="" class="label"> العملة *</label>
+          <select name="" id="" class="custom-select">
+            <option value="">دولار اميريكي</option>
+            <option value="">جنية مصري</option>
+          </select>
         </div>
-        <div class="table-wrapper">
-          <table class="table">
-            <thead>
-              <th>رقم الضمان</th>
-              <th>التنبيه</th>
-              <th>درجة الخطورة</th>
-              <th> التاريخ </th>
-              <th> الوقت </th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>تشغيل لدى الغير 1</td>
-                <td>
-                  تم استلام خطاب رفض العينه و لم يسجل بالنظام ارسال العينة
-                  الثانية
-                </td>
-                <td>خطير جدا</td>
-                <td>
-                  20/08/2023
-                </td>
-                <td>
-                  10:00
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="fields__field">
+          <label for="" class="label"> بنك *</label>
+          <select name="" id="" class="custom-select">
+            <option value="">البنك الاهلي</option>
+            <option value="">اخري</option>
+          </select>
+        </div>
+      </form>
+      <div class="actions">
+        <div class="left-actions">
+          <a
+            href="successful-message.html"
+            class="btn-primary"
+            data-type="modal"
+            data-target="creation-success"
+          >
+            انشاء
+          </a>
+          <button class="btn-primary">إلغاء </button>
         </div>
       </div>
     </div>
   </div>
 </main>
+
+<div
+  id="creation-success"
+  class="mfp-with-anim mfp-hide normal-popup"
+  data-effect="mfp-zoom-in"
+>
+  <div class="wrapper">
+    <div class="wrapper__content">
+      <div class="wrapper__content__header">
+        <h2>Created Successfully</h2>
+      </div>
+      <div class="wrapper__content__body">
+        <p>This LG is now available for the Transaction</p>
+      </div>
+      <div class="wrapper__content__footer">
+        <div class="actions">
+          <button class="btn-primary">OK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
