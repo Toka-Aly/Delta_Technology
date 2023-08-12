@@ -13,7 +13,6 @@
             </li>
             <li>
               <a href="view-all-transaction.html"> كل المعاملات </a>
-
             </li>
           </ul>
         </li>
@@ -31,7 +30,6 @@
             </li>
             <li>
               <a href="view-all-transaction.html"> كل المعاملات </a>
-
             </li>
           </ul>
         </li>
@@ -99,61 +97,79 @@
         </li>
       </ul>
     </aside>
+
     <div class="main__content">
       <div class="page-title">
-        <h1>إنشاء خطاب ضمان بنكي</h1>
+        <h1>كل المعاملات</h1>
       </div>
-      <form action="" class="fields fields--grid">
-        <div class="fields__field">
-          <label for="" class="label"> الرقم النعريفي للضمان البنكي *</label>
-          <input type="number" class="custom-field" />
-        </div>
-        <div class="fields__field">
-          <label for="" class="label"> مبلغ *</label>
-          <input type="number" class="custom-field" id="input-amount" />
-        </div>
-        <div class="fields__field">
-          <label for="" class="label"> تاريخ الإصدار *</label>
-          <input
-            type="text"
-            class="custom-field input-date"
-            placeholder="23-05-2012"
-          />
-        </div>
-        <div class="fields__field">
-          <label for="" class="label"> تاريخ استحقاق *</label>
-          <input
-            type="text"
-            class="custom-field input-date"
-            placeholder="23-05-2012"
-          />
-        </div>
-        <div class="fields__field">
-          <label for="" class="label"> العملة *</label>
-          <select name="" id="" class="custom-select">
-            <option value="">دولار اميريكي</option>
-            <option value="">جنية مصري</option>
-          </select>
-        </div>
-        <div class="fields__field">
-          <label for="" class="label"> بنك *</label>
-          <select name="" id="" class="custom-select">
-            <option value="">البنك الاهلي</option>
-            <option value="">اخري</option>
-          </select>
-        </div>
-      </form>
+      <div class="page-heading">
+        <form action="" class="fields fields--grid">
+          <div class="fields__field">
+            <label for="" class="label"> تاريخ الطلب</label>
+            <input
+              type="text"
+              class="custom-field input-date"
+              placeholder="يوم-شهر-سنة"
+            />
+          </div>
+
+          <div class="fields__field">
+            <label for="" class="label"> تاريخ الاستحقاق</label>
+            <input
+              type="text"
+              class="custom-field input-date"
+              placeholder="يوم-شهر-سنة"
+            />
+          </div>
+          <div class="fields__field">
+            <label for="" class="label">الحالة </label>
+            <select name="" id="" class="custom-select">
+              <option value="">جدبد</option>
+              <option value="">اخري</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>الرقم النعريفي</th>
+            <th>تاريخ الطلب</th>
+            <th>الحالة</th>
+            <th>المبلغ</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>5698441484</td>
+            <td>20-08-2010</td>
+            <td>جديد</td>
+            <td>265565</td>
+
+            <td class="table-actions">
+              <a href="edit_Lg.html" class="btn-primary"> تعديل </a>
+              <a href="view_Lg.html" class="btn-primary"> اعرض الضمان </a>
+              <button class="btn-primary">الارشيف</button>
+            </td>
+          </tr>
+          <tr>
+            <td>5698441484</td>
+            <td>20-08-2010</td>
+            <td>جديد</td>
+            <td>265565</td>
+
+            <td class="table-actions">
+              <a href="edit_Lg.html" class="btn-primary"> تعديل </a>
+              <a href="view_Lg.html" class="btn-primary"> اعرض الضمان </a>
+              <button class="btn-primary">الارشيف</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
       <div class="actions">
         <div class="left-actions">
-          <a
-            href="successful-message.html"
-            class="btn-primary"
-            data-type="modal"
-            data-target="creation-success"
-          >
-            انشاء
-          </a>
-          <a href="" class="btn-primary">إلغاء </a>
+          <a href="create_Lg.html" class="btn-primary"> انشاء </a>
         </div>
       </div>
     </div>
