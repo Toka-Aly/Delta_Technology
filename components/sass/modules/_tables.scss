@@ -64,3 +64,11 @@
     background: #adb5bd;
   }
 }
+.table-actions{
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+  .btn-primary{
+    margin: 0 1rem;
+  }
+}

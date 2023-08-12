@@ -70,3 +70,22 @@
     }
   }
 }
+.wrapper__content-centered{
+  .wrapper__content__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+  img{
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -27,12 +27,14 @@ if (env === "development") {
     "components/scripts/jquery.js",
     "components/scripts/jquery-ui.js",
     "components/scripts/jquery.magnific-popup.js",
+    "components/scripts/datatables.min.js",
   ];
 } else {
   outputDir = "builds/production/";
   jsSources = [
     "components/scripts/jquery.js",
     "components/scripts/jquery-ui.js",
+    "components/scripts/datatables.min.js",
     "components/scripts/jquery.magnific-popup.js",
   ];
 }

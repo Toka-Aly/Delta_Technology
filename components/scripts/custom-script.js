@@ -223,3 +223,26 @@ $('[name="option1"]').on("change", function () {
     });
   }
 })();
+
+// datatable
+
+(function () {
+  if ($("table.sortable").length) {
+    $("table.sortable").DataTable({
+      info: false,
+      searching: false,
+      lengthChange: false,
+      paging: false,
+    });
+  }
+
+  if ($("table.sortable-search").length) {
+    $("table.sortable-search").DataTable({
+      info: false,
+      searching: true,
+      lengthChange: false,
+      paging: false,
+    });
+  }
+})();
+//Tables With dataTable Plugin

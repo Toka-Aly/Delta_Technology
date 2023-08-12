@@ -43,8 +43,9 @@
             &.open {
                 .sub-nav {
                     display: block;
-
-                    a {}
+                }
+                >a{
+                    color: $primaryColor;
                 }
             }
 

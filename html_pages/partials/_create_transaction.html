@@ -6,7 +6,9 @@
           <a href="create_transaction.html"> انشاء صادر </a>
           <ul class="sub-nav">
             <li>
-              <a href="create_transaction.html" class="selected"> انشاء جديد </a>
+              <a href="create_transaction.html" class="selected">
+                انشاء جديد
+              </a>
             </li>
             <li>
               <a href="archive.html"> الارشيف </a>
@@ -28,10 +30,10 @@
           </ul>
         </li>
         <li class="dropdown-list">
-          <a href="create_Lg.html"> إدارة الضامن </a>
+          <a href="view-all-LG.html"> إدارة الضامن </a>
           <ul class="sub-nav">
             <li>
-              <a href="create_Lg.html"> خطاب ضمان بنكي </a>
+              <a href="view-all-LG.html"> خطاب ضمان بنكي </a>
             </li>
             <li>
               <a href="#"> تعهد شخصي </a>
@@ -99,7 +101,10 @@
         <form action="" class="fields fields--grid">
           <div class="fields__field">
             <label for="" class="label"> رقم الشهادة *</label>
-            <input type="text" class="custom-field" value="11000" />
+            <input type="text" class="custom-field error-field" value="11000" />
+            <p class="error-note">* هذا الحقل مطلوب</p>
+
+            <p></p>
           </div>
 
           <div class="fields__field">
@@ -363,9 +368,10 @@
                   <label for="" class="label"> رقم مانيفستو </label>
                   <input
                     type="number"
-                    class="custom-field"
+                    class="custom-field error-field"
                     placeholder="xxxxx-xxxx"
                   />
+                  <p class="error-note">بوجد خطأ</p>
                 </div>
                 <div class="fields__field">
                   <label for="" class="label"> وسيلة الشحن </label>
@@ -646,7 +652,7 @@
               </div>
               <div class="alert alert--success" style="display: block">
                 <div class="alert__content">
-                  <p>Uploaded Successfully</p>
+                  <p>تم تحميل الملف بنجاح</p>
 
                   <button class="btn-link close-btn">X</button>
                 </div>
@@ -670,7 +676,7 @@
               </div>
               <div class="alert alert--error" style="display: block">
                 <div class="alert__content">
-                  <p>Failed to upload. The document size is to large.</p>
+                  <p>فشل في التحميل. حجم المستند كبير.</p>
                   <button class="btn-link close-btn">X</button>
                 </div>
               </div>

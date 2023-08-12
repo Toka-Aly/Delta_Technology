@@ -1,0 +1,13 @@
+.dataTables_wrapper {
+	.dataTables_filter {
+		input {
+			border: 1px solid #eee;
+			padding: 0 1.5rem;
+			height: 4rem;
+			font-size: 1.5rem;
+		}
+		label{
+			font-size: 0;
+		}
+	}
+}
