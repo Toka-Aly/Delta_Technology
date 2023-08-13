@@ -24,7 +24,8 @@ textarea {
     padding: 0 1.5rem;
     height: 4rem;
     font-size: 1.5rem;
-    &.error-field{
+
+    &.error-field {
         border-color: red;
     }
 }
@@ -156,6 +157,11 @@ textarea {
     margin-bottom: 0.5rem;
     width: fit-content;
 
+    &.disabled {
+        opacity: 0.8;
+        pointer-events: none;
+    }
+
     >div {
         display: flex;
         align-items: center;
@@ -239,15 +245,17 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
-.seach-form{
+
+.seach-form {
     margin-bottom: 2rem;
-    .fields{
+
+    .fields {
         position: relative;
         display: flex;
         align-items: flex-end;
-        
-        .btn-primary{
-         margin-inline-start: 1rem;
+
+        .btn-primary {
+            margin-inline-start: 1rem;
         }
     }
 }

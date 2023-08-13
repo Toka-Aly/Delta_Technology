@@ -13,7 +13,6 @@
             </li>
             <li>
               <a href="view-all-transaction.html"> كل المعاملات </a>
-
             </li>
           </ul>
         </li>
@@ -31,7 +30,6 @@
             </li>
             <li>
               <a href="view-all-transaction.html"> كل المعاملات </a>
-
             </li>
           </ul>
         </li>
@@ -39,11 +37,10 @@
           <a href="view-all-LG.html"> إدارة الضامن </a>
           <ul class="sub-nav">
             <li>
-              <a href="view-all-LG.html" class="selected"> خطاب ضمان بنكي </a>
+              <a href="view-all-LG.html"> خطاب ضمان بنكي </a>
             </li>
             <li>
-                            <a href="create_WhiteList.html"> تعهد شخصي </a>
-
+              <a href="create_WhiteList.html" class="selected"> تعهد شخصي </a>
             </li>
             <li>
               <a href="#"> نقدا </a>
@@ -102,16 +99,27 @@
     </aside>
     <div class="main__content">
       <div class="page-title">
-        <h1>إنشاء خطاب ضمان بنكي</h1>
+        <h1>إنشاء تعهد شخصي</h1>
       </div>
       <form action="" class="fields fields--grid">
         <div class="fields__field">
-          <label for="" class="label"> الرقم النعريفي للضمان البنكي *</label>
-          <input type="number" class="custom-field" />
+          <label for="" class="label"> الرقم النعريفي للتعهد الشخصي </label>
+          <select name="" id="" class="custom-select">
+            <option value="">59595q56</option>
+            <option value="">1161q46564</option>
+          </select>
+        </div>
+
+        <div class="fields__field">
+          <label for="" class="label"> مبلغ </label>
+          <input type="number" class="custom-field" id="input-amount" />
         </div>
         <div class="fields__field">
-          <label for="" class="label"> مبلغ *</label>
-          <input type="number" class="custom-field" id="input-amount" />
+          <label for="" class="label"> العملة </label>
+          <select name="" id="" class="custom-select">
+            <option value="">دولار اميريكي</option>
+            <option value="">جنية مصري</option>
+          </select>
         </div>
         <div class="fields__field">
           <label for="" class="label"> تاريخ الإصدار *</label>
@@ -129,19 +137,17 @@
             placeholder="23-05-2012"
           />
         </div>
+        
+      </form>
+      <form action="" class="m-t-20">
         <div class="fields__field">
-          <label for="" class="label"> العملة *</label>
-          <select name="" id="" class="custom-select">
-            <option value="">دولار اميريكي</option>
-            <option value="">جنية مصري</option>
-          </select>
-        </div>
-        <div class="fields__field">
-          <label for="" class="label"> بنك *</label>
-          <select name="" id="" class="custom-select">
-            <option value="">البنك الاهلي</option>
-            <option value="">اخري</option>
-          </select>
+          <label class="radio-check">
+            <div>
+              <input type="radio" name="option1" value="enable" />
+              <span class="check-mark"></span>
+              <i> اتاحة</i>
+            </div>
+          </label>
         </div>
       </form>
       <div class="actions">

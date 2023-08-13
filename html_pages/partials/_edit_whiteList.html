@@ -13,7 +13,6 @@
             </li>
             <li>
               <a href="view-all-transaction.html"> كل المعاملات </a>
-
             </li>
           </ul>
         </li>
@@ -31,7 +30,6 @@
             </li>
             <li>
               <a href="view-all-transaction.html"> كل المعاملات </a>
-
             </li>
           </ul>
         </li>
@@ -39,11 +37,10 @@
           <a href="view-all-LG.html"> إدارة الضامن </a>
           <ul class="sub-nav">
             <li>
-              <a href="view-all-LG.html" class="selected"> خطاب ضمان بنكي </a>
+              <a href="view-all-LG.html"> خطاب ضمان بنكي </a>
             </li>
             <li>
-                            <a href="create_WhiteList.html"> تعهد شخصي </a>
-
+              <a href="create_WhiteList.html" class="selected"> تعهد شخصي </a>
             </li>
             <li>
               <a href="#"> نقدا </a>
@@ -106,12 +103,23 @@
       </div>
       <form action="" class="fields fields--grid">
         <div class="fields__field">
-          <label for="" class="label"> الرقم النعريفي للضمان البنكي *</label>
-          <input type="number" class="custom-field" />
+          <label for="" class="label"> الرقم النعريفي للتعهد الشخصي </label>
+          <select name="" id="" class="custom-select">
+            <option value="">59595q56</option>
+            <option value="">1161q46564</option>
+          </select>
+        </div>
+
+        <div class="fields__field">
+          <label for="" class="label"> مبلغ </label>
+          <input type="number" class="custom-field" id="input-amount" />
         </div>
         <div class="fields__field">
-          <label for="" class="label"> مبلغ *</label>
-          <input type="number" class="custom-field" id="input-amount" />
+          <label for="" class="label"> العملة </label>
+          <select name="" id="" class="custom-select">
+            <option value="">دولار اميريكي</option>
+            <option value="">جنية مصري</option>
+          </select>
         </div>
         <div class="fields__field">
           <label for="" class="label"> تاريخ الإصدار *</label>
@@ -129,32 +137,61 @@
             placeholder="23-05-2012"
           />
         </div>
+        
+      </form>
+      <form action="" class="m-t-20">
         <div class="fields__field">
-          <label for="" class="label"> العملة *</label>
-          <select name="" id="" class="custom-select">
-            <option value="">دولار اميريكي</option>
-            <option value="">جنية مصري</option>
-          </select>
-        </div>
-        <div class="fields__field">
-          <label for="" class="label"> بنك *</label>
-          <select name="" id="" class="custom-select">
-            <option value="">البنك الاهلي</option>
-            <option value="">اخري</option>
-          </select>
+          <label class="radio-check disabled">
+            <div>
+              <input type="radio" name="option1" value="enable" />
+              <span class="check-mark"></span>
+              <i> اتاحة</i>
+            </div>
+          </label>
         </div>
       </form>
-      <div class="actions">
-        <div class="left-actions">
-          <a
-            href="successful-message.html"
-            class="btn-primary"
-            data-type="modal"
-            data-target="creation-success"
-          >
-            انشاء
-          </a>
-          <a href="" class="btn-primary">إلغاء </a>
+      <div class="expansion-element">
+        <h3>قيمة الزيادة</h3>
+        <form action="" class="fields fields--grid">
+          <div class="fields__field">
+            <label for="" class="label"> مبلغ *</label>
+            <input
+              type="number"
+              class="custom-field"
+              id="input-amount"
+              readonly
+              value="15000"
+            />
+          </div>
+          <div class="fields__field">
+            <label for="" class="label"> تاريخ الإصدار *</label>
+            <input
+              type="text"
+              class="custom-field input-date"
+              placeholder="23-05-2012"
+            />
+          </div>
+          <div class="fields__field">
+            <label for="" class="label"> تاريخ استحقاق *</label>
+            <input
+              type="text"
+              class="custom-field input-date"
+              placeholder="23-05-2012"
+            />
+          </div>
+        </form>
+        <div class="actions">
+          <div class="left-actions">
+            <a
+              href="successful-message.html"
+              class="btn-primary"
+              data-type="modal"
+              data-target="edit-success"
+            >
+              تعديل
+            </a>
+            <a href="" class="btn-primary">إلغاء </a>
+          </div>
         </div>
       </div>
     </div>
@@ -162,18 +199,19 @@
 </main>
 
 <div
-  id="creation-success"
+  id="edit-success"
   class="mfp-with-anim mfp-hide normal-popup"
   data-effect="mfp-zoom-in"
 >
   <div class="wrapper">
-    <div class="wrapper__content">
+    <div class="wrapper__content wrapper__content-centered">
       <div class="wrapper__content__header">
-        <h2>Created Successfully</h2>
+        <figure>
+          <img src="content/images/success.svg" alt="" />
+        </figure>
+        <h2>Edit Successfully</h2>
       </div>
-      <div class="wrapper__content__body">
-        <p>This LG is now available for the Transaction</p>
-      </div>
+
       <div class="wrapper__content__footer">
         <div class="actions">
           <button class="btn-primary close-popup">OK</button>
